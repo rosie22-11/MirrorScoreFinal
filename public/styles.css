@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+/* testimonial */
+.cardshadow{
+    box-shadow: 4px 4px 22px 1px #888888;
+  }
+  
+  @keyframes jump {
+    100% {border: 2px solid blue; transform: scale(1.1,1.1);box-shadow: 4px 4px 22px 1px #888888;}
+  }
+  
+  .example{
+  
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-delay: 1s;
+       
+  }
+  .example1{
+    
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  
+  }
+  .example2{
+    
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-delay: 3s;  
+  }
+/* acheivement */
+
+.cardbackground{
+    background: linear-gradient(102.4deg, #6CBEDD 5.64%, rgba(121, 207, 240, 0.7) 92.95%);
+}
+
+.card-shadow{
+    width: 400px;
+height: 200px;
+    box-shadow: 8px 5px 30px rgba(131, 131, 131, 0.15);
+border-radius: 30px;
+}
+
+.content{
+    font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 44px;
+}
+
+
+.number{
+    font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 55px;
+color: #333333;
+}
+.back{
+    background-image: url("../public/image/Vector.png");
+    background-repeat: no-repeat;
+    background-position: 90% 70%;
+}
+
+
+/* footersection */
+.footer{
+    width: 1518px;
+height: 808px;
+background-color: #27252F;
+
+}
+.call-to-action{
+    width: 1180px;
+height: 500px;
+background: #FFFFFF;
+box-shadow: 0px -4px 32px 16px rgba(131, 131, 131, 0.1);
+border-radius: 11.8px;
+}
+
+.tablet_img{
+    width: 476px;
+    height: 322px;
+}
+
+.playstore_img{
+    width: 198px;
+    height: 60px;
+}
+
+.call-to-action{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 10%; bottom: 45%;
+
+}
+.heading{
+    width: 340px;
+    height: 120px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    color: #3C4852;
+    margin-bottom: 1rem;
+}
+
+.sub_heading{
+    width: 390px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+
+/* study material */
+
+
+.book-img, .exam-img, .patent-img, .textbook-img{
+    width:92.53px;
+height:98.09px;
+}
+
+.study_sub_content{
+    font-family: Raleway; font-weight:600;font-style:normal; font-size:18px; 
+    color: #838383;
+    line-height:19px;width:492px;height: 121px;
+}
+
+.study_card{
+    width :194.81px;height: 292.21px; border-radius: 25px;
+    box-shadow: 2px 10px 15px 5px rgba(214, 214, 214, 0.29);
+}
+
+.study1_bg{
+    background: #B6E5E5; 
+}
+
+.study2_bg{
+    background: #FFE9B3;
+}
+
+.study3_bg{
+    background: #DDEFFF;
+}
+
+.study4_bg{
+    background: #FADDFF;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .study_sub_content{
+        font-family: Raleway; font-weight:400;font-style:normal;font-size:15px; 
+        color: #838383; line-height:19px;width: 450px;height: 80px;
+    }
+
+    .study-img{
+        width: 400px; height: 350px;
+    }
+
+    .study_card{
+        width :180.81px; height: 300.21px;
+    }
+} */
