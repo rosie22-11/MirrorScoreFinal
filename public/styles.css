@@ -1,7 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-
+/* mock test */
+.mocktest_name{
+    font-weight: 800;font-style: normal;font-size: 24px;
+     line-height: 32.78px;
+    color: #262626;
+  }
+  .mocktest_details{
+    font-family: 'Raleway';font-weight:700;font-style: normal;
+  font-size:  16px;line-height:18.78px; color: #262626;
+  }
+  .mocktest_free{
+    width: 60px;
+  height: 60px; 
+  background-color: #fff;  border-radius: 10px; padding-top: 1rem;
+  }
+  .mocktest_free p{
+    font-weight:900; font-style:normal; font-size: 20px;
+  line-height:27.32px; text-align: center; text-transform: uppercase;
+  
+  }
+  .start_test{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 800;font-style:normal;font-size:16px;line-height:19.2px;
+  }
+  
+  .free_mock{
+    font-weight: 800;font-style:normal; font-size:40px;
+  line-height:54.64px; color:#262626;
+  }
+  
+  .free_mock_details{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600; font-style: normal; font-size: 18px; line-height: 21.13px;
+    color: #838383; width: 500px;
+  }
+  
+  .free_mock_img{
+    width: 350px;
+  height: 345.29px;
+  }
+  
+  .more_free_test{
+    width: 350px;
+  height: 60px;
+  box-shadow: 0px 0px 25px 5px rgba(131, 131, 131, 0.1);
+  border-radius: 10px;
+  padding-top: .8rem;
+  background: #87E3FF;
+  }
+  
+  .more_free_test p{
+    font-weight:700; font-style:normal; font-size:26px;
+  line-height:35.52px; text-align:center; color:#2D2D2D;
+  }
+  
+  .mock_name1{
+    width: 450px;
+  height: 180px;
+  background: #7BF6D8;
+  border-radius: 25px;
+  }
+  
+  .mock_name2{
+    width: 450px;
+  height: 180px;
+  background: #FFE85E;
+  border-radius: 25px;
+  }
+  .mock_name3{
+    width: 450px;
+  height: 180px;
+  background: #FEB3B1;
+  border-radius: 25px;
+  }
+  
+  .mock_img{
+    width: 100px;
+  height: 100px;
+  }
+  /* mock test */
 /* testimonial */
 .cardshadow{
     box-shadow: 4px 4px 22px 1px #888888;
@@ -60,9 +141,9 @@ line-height: 55px;
 color: #333333;
 }
 .back{
-    background-image: url("../public/image/Vector.png");
+    background-image: url("../public/image/vector1.jpeg");
     background-repeat: no-repeat;
-    background-position: 90% 70%;
+    background-position: 110% 70%;
 }
 
 
@@ -98,7 +179,7 @@ border-radius: 11.8px;
     left: 10%; bottom: 45%;
 
 }
-.heading{
+.footer_heading{
     width: 340px;
     height: 120px;
     font-family: 'Poppins';
@@ -119,7 +200,9 @@ border-radius: 11.8px;
 
 /* study material */
 
-
+.heading{
+    font-family: 'Manrope', sans-serif;
+}
 .book-img, .exam-img, .patent-img, .textbook-img{
     width:92.53px;
 height:98.09px;
@@ -128,7 +211,7 @@ height:98.09px;
 .study_sub_content{
     font-family: Raleway; font-weight:600;font-style:normal; font-size:18px; 
     color: #838383;
-    line-height:19px;width:492px;height: 121px;
+    line-height:19px; width:492px; height: 121px; padding-top: 40px;
 }
 
 .study_card{
