@@ -1,5 +1,9 @@
 /* videos */
+#video-section {
+  background: rgba(135, 227, 255, 0.3);
+}
 .video-heading {
+  padding-block: 1rem;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -8,6 +12,9 @@
   color: #262626;
 }
 .video-content {
+  margin-bottom: 2rem;
+  width: 877.65px;
+  height: 92.31px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -15,11 +22,12 @@
   line-height: 21.13px;
   color: #737373;
 }
-
+.videos {
+  margin-bottom: 4rem;
+}
 .video1,
 .video2,
 .video3 {
-  position: relative;
   width: 375.18px;
   height: 289.5px;
   background: #ffffff;
@@ -30,7 +38,8 @@
 .video1-img,
 .video2-img,
 .video3-img {
-  position: absolute;
+  position: relative;
+  right: 1.5%;
   width: 384.83px;
   height: 192.79px;
   background: #87e3ff;
@@ -40,7 +49,6 @@
 .video1-name,
 .video2-name,
 .video3-name {
-  position: absolute;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -51,7 +59,6 @@
 .video1-desc,
 .video2-desc,
 .video3-desc {
-  position: absolute;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -60,7 +67,6 @@
   color: rgba(131, 131, 131, 1);
 }
 .watch-bg {
-  position: absolute;
   margin-left: 2rem;
   width: 350px;
   height: 80px;
@@ -78,14 +84,115 @@
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
+.vedio-img1 {
+  width: 150px;
+  height: 126px;
+  border-radius: 50%;
+}
+.circle1 {
+  background: linear-gradient(135deg, #2ad9ff 0%, #26c5ec 100%);
+  height: 47px;
+  width: 45px;
+  border-radius: 50%;
+}
 .circle {
-  position: relative;
-  background-color: red;
+  position: absolute;
+  z-index: 5;
+  background: linear-gradient(135deg, #2ad9ff 0%, #26c5ec 100%);
   height: 80px;
   width: 80px;
   border-radius: 50%;
 }
+@media (max-width: 1023px) {
+  .video-heading {
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 38.25px;
+    color: rgba(38, 38, 38, 1);
+  }
+  .video-content {
+    width: 100%;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16.44px;
+    color: rgba(115, 115, 115, 1);
+  }
+  .video1,
+  .video2,
+  .video3 {
+    width: 100%;
+    /* height: 100%; */
 
+    background: #ffffff;
+    box-shadow: -5px 5px 10px 5px rgba(229, 229, 229, 0.25);
+    border-radius: 10px;
+  }
+  .video1-img,
+  .video2-img,
+  .video3-img {
+    position: relative;
+    right: 1%;
+    width: 100%;
+    /* height: 100%; */
+    background: #87e3ff;
+    border-radius: 20px;
+  }
+  .video1-name,
+  .video2-name,
+  .video3-name {
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+  .video1-desc,
+  .video2-desc,
+  .video3-desc {
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+  .watch-bg {
+    position: relative;
+    margin-left: 2rem;
+    width: 231.75px;
+    height: 52.97px;
+  }
+  .circle {
+    position: absolute;
+
+    left: 2%;
+    width: 52.97px;
+    height: 55.5px;
+  }
+  .watch-more {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .play {
+    display: none;
+  }
+
+  @media (max-width: 1023px) and (min-width: 540px) {
+    .video1,
+    .video2,
+    .video3 {
+      width: 70%;
+    }
+    .video1-img,
+    .video2-img,
+    .video3-img {
+      position: relative;
+      right: 1%;
+      width: 100%;
+    }
+  }
+}
 /* videos */
 
 /* mock test */
@@ -315,10 +422,11 @@
 /* mock test */
 
 /* testimonial */
-.cardshadow {
-  box-shadow: 4px 4px 22px 1px #888888;
-}
+
 .testimonial-title {
+  width: 100%;
+  height: 43px;
+  font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 48px;
@@ -326,15 +434,20 @@
   color: rgba(0, 0, 0, 1);
 }
 .testimonial-content {
+  font-family: "Questrail", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
   line-height: 24.72px;
   color: rgba(60, 60, 60, 1);
   width: 518px;
-  height: 160px;
+
+  /* height: 160px; */
 }
 .testimonial-head {
+  font-family: "Manrope", sans-serif;
+  width: 559px;
+  /* height: 43px; */
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -378,6 +491,51 @@
   bottom: -0.5em;
   left: 50%;
   transform: translate(-50%);
+}
+
+@media (max-width: 1023px) {
+  .rightflex {
+    height: 200px;
+  }
+
+  .testimonial {
+    padding-inline: 1rem;
+    margin-inline: 1rem;
+    padding-bottom: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .testimonial-title {
+    /* width: 90%; */
+    height: 82px;
+    font-size: 30px;
+    line-height: 40.98px;
+    margin-bottom: 4rem;
+  }
+  .testimonial-head {
+    width: 100%;
+    /* height: 58px; */
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-bottom: 1rem;
+  }
+  .testimonial-content {
+    width: 100%;
+    /* height: 130.67px; */
+    font-size: 18px;
+    line-height: 20.54px;
+    padding-bottom: 1rem;
+  }
+
+  @keyframes jump {
+    0% {
+    }
+  }
+
+  .example {
+    animation-name: jump;
+  }
 }
 
 /* achievement */
@@ -771,8 +929,8 @@
     font-size: 16px;
     line-height: 18.78px;
     color: rgba(131, 131, 131, 1);
-    width: 100%;
-    height: 121px;
+    width: 90%;
+    height: 100%;
   }
   .study-img {
     width: 200px;
@@ -780,8 +938,14 @@
   }
   .study_card {
     width: 45%;
-    height: 225px;
+    height: 245px;
     margin: 1.5%;
+  }
+  .text-solution {
+    line-height: 1.5rem;
+  }
+  .syllabus {
+    padding-top: 1rem;
   }
   .book-img,
   .exam-img,
