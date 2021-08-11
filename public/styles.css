@@ -1,3 +1,589 @@
+/* mainsection */
+.maincontent {
+  margin-block: auto;
+}
+.mainpage {
+  width: 1180px;
+  height: 500px;
+  background: #87e3ff;
+  border-radius: 25px;
+}
+.mainhead {
+  width: 375px;
+  height: 96px;
+  font-family: Open sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  align-items: center;
+  padding-left: 10px;
+  color: #000000;
+}
+.mainsub {
+  width: 277px;
+  height: 19px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #2b2b2b;
+}
+.mainbtn {
+  margin-bottom: 1.5rem;
+  width: 381px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.mainbtn p {
+  /* width: 295px; */
+  padding-left: 1rem;
+  height: 35px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  padding-top: 0.8rem;
+  color: #000000;
+}
+.playbtn {
+  width: 180px;
+  height: 55.26px;
+  background: #000000;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.playbtn img {
+  margin-inline: auto;
+  padding-top: 8px;
+}
+@media (max-width: 1023px) {
+  .mainpage {
+    width: 95%;
+    height: 100%;
+    /* height: 474.18px; */
+    background: #87e3ff;
+    border-radius: 15px;
+  }
+  .mainhead {
+    width: 100%;
+    height: 96px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+  }
+  .mainimg {
+    margin-inline: auto;
+    width: 80%;
+    /* height: 198.55px; */
+  }
+  .mainsub {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    text-align: center;
+    color: rgba(43, 43, 43, 1);
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+  .mainbtn {
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin-inline: auto;
+  }
+  .mainbtn p {
+    /* width: 210.13px; */
+    height: 28px;
+    font-size: 11px;
+    padding-top: 0.6rem;
+    margin-inline: auto;
+  }
+  .playbtn {
+    width: 150px;
+    height: 46.05px;
+    margin-inline: auto;
+  }
+  .playbtn img {
+    width: 125.58px;
+    height: 32.09px;
+  }
+  @media (min-width: 400px) and (max-width: 768px) {
+  }
+}
+/* mainsection */
+
+/* oneonone class */
+.on1card1 {
+  /* width: 467px; */
+  /* height: 404px; */
+  /* width: 100%; */
+  background: rgba(127, 215, 194, 0.6);
+  border-radius: 15px;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+}
+.on1card1 p {
+  width: 373px;
+  height: 43px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+.on1card1 img {
+  width: 300px;
+  height: 229.72px;
+}
+.cardhead {
+  display: flex;
+  flex-direction: row;
+  padding-block: 1rem;
+}
+.alarm {
+  background: rgba(255, 84, 84, 0.3);
+}
+.communication {
+  background: rgba(243, 173, 74, 0.6);
+}
+.planet {
+  background: rgba(223, 204, 252, 0.6);
+}
+.ppt {
+  background: rgba(190, 232, 218, 0.6);
+}
+.alarm,
+.communication,
+.planet,
+.ppt {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.onecard1 {
+  width: 330px;
+  height: 185px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(255, 135, 135, 0.25);
+  border-radius: 20px;
+  padding-inline: 1rem;
+}
+.bookbtn {
+  margin-top: 2rem;
+  width: 374.94px;
+  height: 50px;
+  background: #000000;
+  border-radius: 10px;
+}
+.bookbtn p {
+  /* width: 297.78px; */
+  height: 33.66px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.one1head {
+  width: 147.33px;
+  height: 50px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding-left: 1rem;
+}
+
+.one1content {
+  width: 291.03px;
+  height: 91px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #202020;
+}
+
+@media (max-width: 1023px) {
+  .one1onealign {
+    max-width: 85%;
+    margin-inline: auto;
+  }
+  .on1card1 {
+    background-color: white;
+    padding-block: 0px;
+    padding-inline: 0px;
+  }
+  .on1card1 p {
+    width: 100%;
+    height: 69.64px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+  }
+  .oneimg2 {
+    display: none;
+  }
+  .on1card1 img {
+    /* width: 400px; */
+    height: 291.07px;
+  }
+  .bookbtn {
+    margin-top: 0;
+    width: 100%;
+    height: 50px;
+  }
+  .bookbtn p {
+    width: 100%;
+    height: 33.66px;
+    color: #ffffff;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    align-items: center;
+    text-align: center;
+  }
+  .onecard1 {
+    width: 100%;
+    margin-block: 1rem;
+    height: 185px;
+  }
+
+  .one1head {
+    width: 147.33px;
+    height: 50px;
+  }
+
+  .one1content {
+    width: 100%;
+    height: 91px;
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+  }
+}
+/* oneonone class */
+
+/* oneonone class */
+.on1card1 {
+  /* width: 467px; */
+  /* height: 404px; */
+  /* width: 100%; */
+  background: rgba(127, 215, 194, 0.6);
+  border-radius: 15px;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+}
+.on1card1 p {
+  width: 373px;
+  height: 43px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+.on1card1 img {
+  width: 300px;
+  height: 229.72px;
+}
+.cardhead {
+  display: flex;
+  flex-direction: row;
+  padding-block: 1rem;
+}
+.alarm {
+  background: rgba(255, 84, 84, 0.3);
+}
+.communication {
+  background: rgba(243, 173, 74, 0.6);
+}
+.planet {
+  background: rgba(223, 204, 252, 0.6);
+}
+.ppt {
+  background: rgba(190, 232, 218, 0.6);
+}
+.alarm,
+.communication,
+.planet,
+.ppt {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.onecard1 {
+  width: 330px;
+  height: 185px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(255, 135, 135, 0.25);
+  border-radius: 20px;
+  padding-inline: 1rem;
+}
+.bookbtn {
+  margin-top: 2rem;
+  width: 374.94px;
+  height: 50px;
+  background: #000000;
+  border-radius: 10px;
+}
+.bookbtn p {
+  /* width: 297.78px; */
+  height: 33.66px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.one1head {
+  width: 147.33px;
+  height: 50px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding-left: 1rem;
+}
+
+.one1content {
+  width: 291.03px;
+  height: 91px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #202020;
+}
+
+@media (max-width: 1023px) {
+  .one1onealign {
+    max-width: 85%;
+    margin-inline: auto;
+  }
+  .on1card1 {
+    background-color: white;
+    padding-block: 0px;
+    padding-inline: 0px;
+  }
+  .on1card1 p {
+    width: 100%;
+    height: 69.64px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+  }
+  .oneimg2 {
+    display: none;
+  }
+  .on1card1 img {
+    /* width: 400px; */
+    height: 291.07px;
+  }
+  .bookbtn {
+    margin-top: 0;
+    width: 100%;
+    height: 50px;
+  }
+  .bookbtn p {
+    width: 100%;
+    height: 33.66px;
+    color: #ffffff;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    align-items: center;
+    text-align: center;
+  }
+  .onecard1 {
+    width: 100%;
+    margin-block: 1rem;
+    height: 185px;
+  }
+
+  .one1head {
+    width: 147.33px;
+    height: 50px;
+  }
+
+  .one1content {
+    width: 100%;
+    height: 91px;
+  }
+}
+/* oneonone class */
+/* doubt */
+
+.doubts {
+  background-image: url("./image/Vectorbg.png");
+}
+.doubt-head {
+  font-family: Reem Kufi;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.doubt-content {
+  width: 591.22px;
+  height: 57.9px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19.12px;
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+}
+.doubtname {
+  width: 291.16px;
+  height: 42px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 42px;
+  color: rgba(0, 0, 0, 1);
+}
+.doubt1:nth-child(even) {
+  padding-left: 2rem;
+}
+.doubtcontent {
+  width: 283.25px;
+  height: 51.48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.doubtbg {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(67, 233, 123, 0.7) 0%,
+    rgba(56, 249, 215, 0.7) 100%
+  );
+  box-shadow: -2px 4px 10px 4px rgba(131, 131, 131, 0.1);
+  border-radius: 10px;
+}
+.askfree {
+  width: 838px;
+  height: 55px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+}
+
+.askfree-content {
+  width: 806px;
+  height: 93px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #838383;
+}
+
+.freeimg1 {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.freeimgbg {
+  position: relative;
+}
+.freeimg3 {
+  position: relative;
+}
+.freebg {
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 70px;
+  background: #000000;
+  border-radius: 15px;
+}
+.freebg p {
+  width: 431.51px;
+  height: 56px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #ffffff;
+}
+/* doubt */
+
 /* videos */
 #video-section {
   background: rgba(135, 227, 255, 0.3);
