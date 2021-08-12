@@ -72,6 +72,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+     <!-- navbar -->
+     <navbar>
+      <div class="flex py-6 mx-auto navb lg:max-w-6xl">
+        <div class="nav">
+          <img class="navimg" src="image/main-logo.png" />
+        </div>
+        <div class="navlink">
+          <ul>
+            <li>Private Class</li>
+            <li>Study Materials</li>
+            <li>Videos</li>
+            <li>Free Doubts</li>
+          </ul>
+        </div>
+        <div class="navbtn">Sign Up</div>
+        <div>
+          <i class="mt-1 lg:hidden fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </navbar>
     <!--mainsection-->
     <section id="main-section">
       <div
@@ -168,7 +188,7 @@
      <!--doubt section-->
 
     <section id="doubt-section" class="bg-green-700 doubts">
-      <div class="absolute z-10 mx-auto ml-72">
+      <div class="absolute z-10 hidden mx-auto lg:inline ml-72">
         <div class="pt-8 doubt-head">
           <p>Pricing starts as low as &#8377; 100 per class</p>
         </div>
@@ -237,7 +257,7 @@
       </div>
     </section>
 
-    <section id="ask-free-doubt" class="">
+    <section id="ask-free-doubt" class="hidden lg:inline" >
       <div class="mx-auto mt-96 askfree">
         The only app you will need for solve doubts
       </div>
@@ -306,7 +326,7 @@
                        <div  class="pb-3 mocktest_name font-body">Linear Inequality</div>
                        <div class="mocktest_details">10 Qs, 30 mins, 40 marks</div>
                    </div>
-                   <div class="ml-4 lg:ml-9 mocktest_free font-body"><p>Free</p></div>
+                   <div class="ml-4 lg:ml-12 mocktest_free font-body"><p>Free</p></div>
                </div>
                <div class="flex justify-end">
                    <p class="start_test font-body">Start Test &RightArrow;</p>
@@ -408,14 +428,17 @@
         </div>
 
         <div class="mx-auto lg:max-w-sm">
+          <div class="bg-red-700">
           <div class="circle">
             <svg class="play">
               <path d="M28 13 L28 65 L65 40 Z" fill="white" />
             </svg>
+            
             <svg class="lg:hidden">
               <path d="M20 13 L19 45 L45 30 Z" fill="white" />
             </svg>
-          </div>
+        
+          </div></div>
           
           <div class="watch-bg hover:bg-gray-800">
             <p class="pt-2 pl-12 text-white lg:pt-3 watch-more">Watch More</p>
@@ -526,13 +549,97 @@
       </div>
     </section> 
 
+      <!-- testimonial-->
+      <section id="testimonial-section" class="py-24">
+        <div class="text-center">
+          <div class="underline1 testimonial-title">
+            <span>Students & Parents Love Us! </span>
+          </div>
+        </div>
+  
+        <div
+          class="border-4 testimonial lg:max-w-5xl lg:border-0 lg:mx-auto lg:mt-4"
+        >
+          <div class="flex flex-col-reverse lg:flex-row lg:flex">
+            <div class="leftflex lg:pt-20">
+              <!-- leftside -->
+              <div class="text-gray-500 lg:mb-12 testimonial-head">
+                What <span class="font-bold text-red-600">Anamika</span> has to
+                say about us,
+              </div>
+              <div class="testimonial-content">
+                Mock tests on Toppr helped me develop my exam strategy. I was able
+                to focus on my shortcomings and improve them! Mock tests on Toppr
+                helped me develop my exam strategy. I was able to focus on my
+                shortcomings and improve them!
+              </div>
+              <div
+                class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
+              ></div>
+              <div class="space-x-1 space-y-2 text-yellow-400">
+                <div class="fa fa-star fa-2x"></div>
+                <div class="fa fa-star fa-2x"></div>
+                <div class="fa fa-star fa-2x"></div>
+                <div class="fa fa-star fa-2x"></div>
+                <div class="hidden fa fa-star fa-2x lg:inline"></div>
+              </div>
+            </div>
+            <!-- rightside-->
+            <div class="rightflex">
+              <div
+                class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 bottom-10 lg:mx-auto lg:my-4 example border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 md:py-8 lg:left-20 lg:top-12"
+              >
+                <div class="px-10 md:px-5">
+                  <img
+                    src="./image/photo.jpg"
+                    class="rounded-full w-14 h-14 md:w-16 md:h-16"
+                  />
+                </div>
+                <div class="pt-2 text-sm font-semibold md:text-base font-incard">
+                  Anamika Xyz
+                </div>
+                <div class="text-sm md:text-base font-incard">Class 7th</div>
+              </div>
+              <div
+                class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 bottom-52 left-16 lg:left-60 lg:mx-auto lg:my-4 lg:bottom-14 example1 border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 md:py-8"
+              >
+                <div class="px-10 md:px-5">
+                  <img
+                    src="./image/photo.jpg"
+                    class="rounded-full w-14 h-14 md:w-16 md:h-16"
+                  />
+                </div>
+                <div class="pt-2 text-sm font-semibold md:text-base font-incard">
+                  Anamika Xyz
+                </div>
+                <div class="text-sm md:text-base font-incard">Class 7th</div>
+              </div>
+              <div
+                class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 left-10 bottom-96 lg:mx-auto lg:my-4 example2 border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 lg:left-20 lg:bottom-32 md:py-8"
+              >
+                <div class="px-10 md:px-5">
+                  <img
+                    src="./image/photo.jpg"
+                    class="rounded-full w-14 h-14 md:w-16 md:h-16"
+                  />
+                </div>
+                <div class="pt-2 text-sm font-semibold md:text-base font-incard">
+                  Anamika Xyz
+                </div>
+                <div class="text-sm md:text-base font-incard">Class 7th</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial -->
     <!-- achievement -->
-     <section id="achievement-section" class="py-12 my-12">
+     <section id="achievement-section" >
     <div class="font-body back">
         <div class="text-center achievement_name lg:text-5xl">
         Why learn on MirrorScore?
         </div>
-        <div class=" lg:max-w-4xl lg:py-12 lg:mx-auto">
+        <div class=" lg:max-w-4xl lg:py-24 lg:mx-auto">
             <div class="lg:grid lg:grid-cols-2 "> 
                 <div class="flex py-1 pl-1 my-8 space-x-2 transform lg:my-0 lg:pl-4 lg:pt-9 cardbackground card-shadow hover:scale-105">
                     <div><img src="./image/happystudent.png" class="w-16 h-16 lg:w-20 lg:h-20"/></div>
@@ -570,94 +677,12 @@
     </div> 
 
 </section>  
-    <!-- testimonial-->
-    <section id="testimonial-section" class="py-24">
-      <div class="text-center">
-        <div class="underline1 testimonial-title">
-          <span>Students & Parents Love Us! </span>
-        </div>
-      </div>
-
-      <div
-        class="border-4 testimonial lg:max-w-5xl lg:border-0 lg:mx-auto lg:mt-4"
-      >
-        <div class="flex flex-col-reverse lg:flex-row lg:flex">
-          <div class="leftflex lg:pt-20">
-            <!-- leftside -->
-            <div class="text-gray-500 lg:mb-12 testimonial-head">
-              What <span class="font-bold text-red-600">Anamika</span> has to
-              say about us,
-            </div>
-            <div class="testimonial-content">
-              Mock tests on Toppr helped me develop my exam strategy. I was able
-              to focus on my shortcomings and improve them! Mock tests on Toppr
-              helped me develop my exam strategy. I was able to focus on my
-              shortcomings and improve them!
-            </div>
-            <div
-              class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
-            ></div>
-            <div class="space-x-1 space-y-2 text-yellow-400">
-              <div class="fa fa-star fa-2x"></div>
-              <div class="fa fa-star fa-2x"></div>
-              <div class="fa fa-star fa-2x"></div>
-              <div class="fa fa-star fa-2x"></div>
-              <div class="hidden fa fa-star fa-2x lg:inline"></div>
-            </div>
-          </div>
-          <!-- rightside-->
-          <div class="rightflex">
-            <div
-              class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 bottom-10 lg:mx-auto lg:my-4 example border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 md:py-8 lg:left-20 lg:top-12"
-            >
-              <div class="px-10 md:px-5">
-                <img
-                  src="./image/photo.jpg"
-                  class="rounded-full w-14 h-14 md:w-16 md:h-16"
-                />
-              </div>
-              <div class="pt-2 text-sm font-semibold md:text-base font-incard">
-                Anamika Xyz
-              </div>
-              <div class="text-sm md:text-base font-incard">Class 7th</div>
-            </div>
-            <div
-              class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 bottom-52 left-32 lg:left-60 lg:mx-auto lg:my-4 lg:bottom-14 example1 border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 md:py-8"
-            >
-              <div class="px-10 md:px-5">
-                <img
-                  src="./image/photo.jpg"
-                  class="rounded-full w-14 h-14 md:w-16 md:h-16"
-                />
-              </div>
-              <div class="pt-2 text-sm font-semibold md:text-base font-incard">
-                Anamika Xyz
-              </div>
-              <div class="text-sm md:text-base font-incard">Class 7th</div>
-            </div>
-            <div
-              class="relative py-8 text-center transform bg-white border-2 shadow-2xl lg:py-6 left-20 bottom-96 lg:mx-auto lg:my-4 example2 border-gray hover:scale-110 hover:border-blue-500 rounded-2xl w-36 md:p-3 lg:right-40 lg:bottom-32 md:py-8"
-            >
-              <div class="px-10 md:px-5">
-                <img
-                  src="./image/photo.jpg"
-                  class="rounded-full w-14 h-14 md:w-16 md:h-16"
-                />
-              </div>
-              <div class="pt-2 text-sm font-semibold md:text-base font-incard">
-                Anamika Xyz
-              </div>
-              <div class="text-sm md:text-base font-incard">Class 7th</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
 
     <!-- footersection -->
 
-    <section id="footer_section" class="">
+    <section id="footer_section" class="wholefooter">
       
         <div class="footer ">
         <div class="mx-auto lg:max-w-6xl footer-details">
@@ -726,7 +751,7 @@
        </div>
 
         <div class="calltoaction">
-           <div class="px-16 py-24 mx-auto call-to-action">
+           <div class="mx-auto lg:px-16 lg:py-24 call-to-action">
               <div >
                   <div class="heading">Get the learning app</div>
                   <div class="sub_heading">Download lessons and learn anytime, anywhere with the MirrorScore app</div>
