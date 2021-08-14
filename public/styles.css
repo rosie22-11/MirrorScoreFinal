@@ -1596,6 +1596,7 @@
     font-weight: 600;
     font-size: 30px;
     color: #3c4852;
+    margin-top: 2rem;
   }
   .sub_heading {
     width: 100%;
@@ -1612,6 +1613,11 @@
   .tablet_img {
     margin-left: 0px;
     height: 100px;
+  }
+  @media (max-width: 550px) and (min-width: 500px) {
+    .tablet_img {
+      margin-top: -80px;
+    }
   }
   @media (min-width: 350px) and (max-width: 380px) {
     .solution {
