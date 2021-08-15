@@ -557,12 +557,12 @@
   }
 }
 /* oneonone class */
-/* doubt */
 
-/* .doubts {
-  background-image: url("./image/Vectorbg.png");
-} */
-
+/* doubt*/
+.doubts {
+  display: flex;
+  justify-content: center;
+}
 .doubt-head {
   font-family: Reem Kufi;
   font-weight: 400;
@@ -825,7 +825,7 @@
   .video2,
   .video3 {
     width: 95%;
-    /* height: 193.75px; */
+    height: 330.75px;
     background: #ffffff;
     box-shadow: -5px 5px 10px 5px rgba(229, 229, 229, 0.25);
     border-radius: 10px;
@@ -861,11 +861,11 @@
     height: 52.97px;
   }
   .circle {
-    position: absolute;
-
-    left: 2%;
-    width: 52.97px;
-    height: 55.5px;
+    /* position: absolute;
+    left: 2%; */
+    margin-left: 1rem;
+    width: 50.97px;
+    height: 52.5px;
   }
   .watch-more {
     font-weight: 600;
@@ -892,10 +892,18 @@
       width: 100%;
     }
   }
+  @media (max-width: 440px) {
+    .video1,
+    .video2,
+    .video3 {
+      height: 280.5px;
+    }
+  }
 }
 /* videos */
 
 /* mock test */
+
 .mocktest_name {
   font-weight: 800;
   font-style: normal;
@@ -1081,7 +1089,6 @@
     flex-grow: 2;
   }
   .mocktest_free {
-    flex-grow: 1;
     width: 43.84px;
     height: 43.84px;
     background: #ffffff;
@@ -1637,7 +1644,26 @@
   } */
 }
 /* study material */
-
+.study-head {
+  width: 158.77px;
+  height: 43.83px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.study-head-desc {
+  width: 151.95px;
+  height: 46.46px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2d2d2d;
+}
 .book-img,
 .exam-img,
 .patent-img,
@@ -1705,10 +1731,6 @@
     line-height: 1.5rem;
   }
 
-  .study-head-desc {
-    width: 127px;
-    height: 65.78px;
-  }
   .syllabus {
     padding-top: 1rem;
   }

@@ -191,11 +191,9 @@
 
     <!--One on One Class-->
      <!--doubt section -->
-
-    <section id="doubt-section" class="doubts">
-        <div class="relative">
-      <div class="hidden lg:inline">
-        <div class="absolute left-0 right-0 max-w-4xl mx-auto">
+     <section id="doubt-section">
+      <div class="doubts">
+         <div class="absolute z-10 hidden mx-auto lg:inline">
         <div class="lg:pt-8 doubt-head">
           <p>Pricing starts as low as &#8377; 100 per class</p>
         </div>
@@ -221,8 +219,8 @@
               </p>
             </div>
           </div>
-          <div class="flex py-6 doubt1 ">
-            <div class=" doubtbg lg:pl-2 lg:pt-4">
+          <div class="flex py-6 doubt1">
+            <div class="doubtbg lg:pl-2 lg:pt-4">
               <img src="./image/d2.png" />
             </div>
             <div class="pl-4">
@@ -258,11 +256,14 @@
             </div>
           </div>
         </div>
-      </div></div>
-      
-        <img src="./image/Vectorbg.png" width="100%" />
+      </div>
+      </div>
+     
+      <div class="relative hidden bg-white lg:inline">
+        <img src="./image/Vectorbg.png" width="100%"  />
       </div>
     </section>
+    <!-- style="height: 650px;" -->
 
     <section id="ask-free-doubt" class="hidden lg:inline" >
       <div class="mx-auto mt-40 askfree">
@@ -304,7 +305,7 @@
                        <div class="pb-3 mocktest_name font-body">Relation and Functions</div>
                        <div class="mocktest_details">10 Qs, 30 mins, 40 marks</div>
                    </div>
-                   <div class=" mocktest_free font-body"><p>Free</p></div>
+                   <div class="mocktest_free font-body"><p>Free</p></div>
                </div>
                <div class="flex justify-end">
                    <p class="start_test font-body">Start Test &RightArrow;</p>
@@ -315,17 +316,15 @@
                    <div class="flex">
                    <div class="mock_img"><img src="./image/doc.png" alt="note.jpg"/></div>
                    <div class="pl-4 mock_name lg:pl-4">
-                       <div  class="pb-3 mocktest_name font-body" >Trigonometric Function</div>
+                       <div  class="pb-3 mocktest_name font-body">Trignometric Function</div>
                        <div class="mocktest_details">10 Qs, 30 mins, 40 marks</div>
                    </div>
-                   <div class=" mocktest_free font-body"><p>Free</p></div>
+                   <div class="mocktest_free font-body"><p>Free</p></div>
                    </div>
                    <div class="flex justify-end">
                    <p class="start_test font-body">Start Test &RightArrow;</p>
                </div>
                </div>
-   
-   
                <div class="flex flex-col justify-around px-4 py-4 mb-8 lg:mb-0 lg:py-0 lg:mt-8 mock_name3">
                    <div class="flex">
                    <div class="mock_img"><img src="./image/doc.png" alt="note.jpg"/></div>
@@ -333,14 +332,15 @@
                        <div  class="pb-3 mocktest_name font-body">Linear Inequality</div>
                        <div class="mocktest_details">10 Qs, 30 mins, 40 marks</div>
                    </div>
-                   <div class="ml-4 lg:ml-12 mocktest_free font-body"><p>Free</p></div>
+                   <div class="mocktest_free lg:ml-16 font-body"><p>Free</p></div>
                </div>
                <div class="flex justify-end">
                    <p class="start_test font-body">Start Test &RightArrow;</p>
                </div>
                </div>
    
-               <div class="mx-auto more_free_test1"><p class=" font-body">Get more free Tests &RightArrow;</p></div>
+               <div class="mx-auto more_free_test1"><button class="font-body">
+                 Get more free Tests &RightArrow;</button></div>
            </div>
    
            <div class="max-w-lg mx-auto mocks-heading lg:max-w-none lg:ml-16">
@@ -397,59 +397,58 @@
           class="flex flex-wrap max-w-sm py-10 mx-auto studycard lg:max-w-md lg:py-0 lg:grid lg:grid-cols-2 lg:w-full lg:gap-3"
         >
           <div
-            class="px-3 mb-6 mr-16 lg:px-4 lg:pt-12 lg:mb-0 lg:mr-0 study_card study1_bg"
+            class="px-3 pt-5 mb-6 mr-16 lg:px-4 lg:pt-10 lg:mb-0 lg:mr-0 study_card study1_bg"
           >
             <img src="./image/book.png" alt="book.png" class="book-img" />
             <div
-              class="text-2xl font-semibold lg:pt-4 lg:font-bold lg:pb-3 study-head"
-            >
+              class="study-head">
               NCERT Books
             </div>
-            <div class="text-xs font-semibold study-head-desc">
+            <div class="study-head-desc">
               NCERT Books for all subjects (English + Hindi)
             </div>
-            <div class="relative float-right text-5xl bottom-4 lg:top-0 lg:bottom-0">
-              &RightArrow;
+            <div>
+              <img class="float-right" src="./image/right-arrow.png" width="30%"/>
             </div>
           </div>
-          <div class="px-3 lg:px-4 lg:pt-12 study_card study2_bg">
+          <div class="px-3 pt-5 lg:px-4 lg:pt-10 study_card study2_bg">
             <img src="./image/exam.png" alt="exam.png" class="exam-img" />
-            <div class="text-2xl font-semibold lg:font-bold lg:pb-3 text-solution">
+            <div class="study-head">
               Text Book Solution
             </div>
-            <div class="text-xs font-semibold">
+            <div class="pt-3 lg:pt-3 study-head-desc">
               NCERT Books for all subjects (English + Hindi)
             </div>
-            <div class="relative bottom-0 float-right text-5xl lg:bottom-3">
-              &RightArrow;
+            <div>
+              <img  class="float-right" src="./image/right-arrow.png" width="30%"/>
             </div>
           </div>
-          <div class="px-3 mr-16 lg:px-4 lg:pt-12 lg:mr-0 study_card study3_bg">
+          <div class="px-3 pt-5 mr-16 lg:px-4 lg:pt-10 lg:mr-0 study_card study3_bg">
             <img src="./image/patent.png" alt="patent.png" class="patent-img" />
-            <div class="text-2xl font-semibold lg:font-bold lg:pb-3">
+            <div class="study-head">
               Revision Note
             </div>
-            <div class="text-xs font-semibold">
+            <div class="study-head-desc">
               NCERT Books for all subjects (English + Hindi)
             </div>
-            <div class="relative float-right text-5xl bottom-4 lg:bottom-0">
-              &RightArrow;
+            <div>
+              <img class="float-right" src="./image/right-arrow.png" width="30%"/>
             </div>
           </div>
-          <div class="px-3 lg:px-4 lg:pt-12 study_card study4_bg">
+          <div class="px-3 pt-5 lg:px-4 lg:pt-10 study_card study4_bg">
             <img
               src="./image/textbook.png"
               alt="textbook.png"
               class="textbook-img"
             />
-            <div class="text-2xl font-semibold lg:font-bold lg:pb-3">
+            <div class="study-head">
               Syllabus
             </div>
-            <div class="text-xs font-semibold syllabus">
+            <div class="study-head-desc">
               NCERT Books for all subjects (English + Hindi)
             </div>
-            <div class="relative float-right text-5xl lg:top-0">
-              &RightArrow;
+            <div>
+              <img class="float-right" src="./image/right-arrow.png" width="30%"/>
             </div>
           </div>
         </div>
@@ -521,16 +520,16 @@
             </div>
           </div>
         </div>
-
+<div class="flex justify-center">
         <div class="mx-auto lg:max-w-sm">
-          <div class="bg-red-700">
+          <div>
           <div class="circle">
             <svg class="play">
-              <path d="M28 13 L28 65 L65 40 Z" fill="white" />
+              <path d="M28 13 L28 65 L65 40 Z" fill="white"/>
             </svg>
             
             <svg class="lg:hidden">
-              <path d="M20 13 L19 45 L45 30 Z" fill="white" />
+              <path d="M19 10 L19 43 L45 28 Z" fill="white"/>
             </svg>
         
           </div></div>
@@ -538,8 +537,7 @@
           <div class="watch-bg hover:bg-gray-800">
             <p class="pt-2 pl-12 text-white lg:pt-3 watch-more">Watch More</p>
           </div>
-        
-        </div>
+        </div></div>
       </div>
     </section>
     <!-- video -->
@@ -553,7 +551,7 @@
         </div>
   
         <div
-          class="border-4 testimonial lg:max-w-5xl lg:border-0 lg:mx-auto lg:mt-4"
+          class="testimonial lg:max-w-5xl lg:border-0 lg:mx-auto lg:mt-4"
         >
           <div class="flex flex-col-reverse lg:flex-row lg:flex">
             <div class="leftflex lg:pt-20">
@@ -667,7 +665,7 @@
             </div>
         </div>
         <div class="mx-auto mt-48 lg:mt-0 join-acheivement">
-            <div class="pt-4 join font-body">Join Our Class &RightArrow;</div>
+            <div class="pt-4 join font-body"><button>Join Our Class &RightArrow;</button></div>
         </div>
     </div> 
 
