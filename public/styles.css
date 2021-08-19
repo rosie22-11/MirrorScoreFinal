@@ -68,11 +68,9 @@
   .navlink {
     display: none;
   }
-
   .navb {
     max-width: 90%;
   }
-
   .nav {
     flex-grow: 1;
   }
@@ -431,14 +429,11 @@
 }
 /* oneonone class */
 
-/* doubt section desktop view*/
+/* price section desktop view*/
 
-.doubts {
-  display: flex;
-  justify-content: center;
-}
-
-.doubt-head {
+.price-head {
+  /* width: 596px; */
+  height: 60px;
   font-family: Reem Kufi;
   font-weight: 400;
   font-style: normal;
@@ -448,7 +443,7 @@
   color: rgba(0, 0, 0, 1);
 }
 
-.doubt-content {
+.price-content {
   width: 591.22px;
   height: 57.9px;
   font-family: "Manrope", sans-serif;
@@ -460,7 +455,7 @@
   color: rgba(38, 38, 38, 1);
 }
 
-.doubtname {
+.pricecard-name {
   width: 291.16px;
   height: 42px;
   font-family: "Poppins", sans-serif;
@@ -470,11 +465,12 @@
   line-height: 42px;
   color: rgba(0, 0, 0, 1);
 }
-.doubt1:nth-child(even) {
+
+.price-card1:nth-child(even) {
   padding-left: 2rem;
 }
 
-.doubtcontent {
+.pricecard-content {
   width: 283.25px;
   height: 51.48px;
   font-family: "Poppins", sans-serif;
@@ -485,7 +481,7 @@
   color: rgba(0, 0, 0, 1);
 }
 
-.doubtbg {
+.price-bg {
   width: 100px;
   height: 100px;
   background: linear-gradient(
@@ -497,77 +493,340 @@
   border-radius: 10px;
 }
 
-.askfree {
-  width: 838px;
+@media (min-width: 767px) {
+  .price {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* price section mobile view */
+
+@media (max-width: 767px) {
+  .price-head {
+    width: 100%;
+    height: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .price-content {
+    width: 100%;
+    height: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #262626;
+  }
+
+  .price-bg {
+    width: 92.52px;
+    height: 92.52px;
+  }
+
+  .pricecard-name {
+    width: 269.38px;
+    height: 38.86px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .pricecard-content {
+    width: 262.07px;
+    height: 47.63px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  .price-card1:nth-child(even) {
+    padding-left: 0px;
+  }
+
+  @media (max-width: 400px) {
+  }
+}
+
+/* price section */
+
+/* doubt section desktop view */
+
+.doubt-heading {
+  width: 285px;
   height: 55px;
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 55px;
-  text-align: center;
+  margin-inline: auto;
+  margin-block: 2rem;
   color: #000000;
 }
 
-.askfree-content {
-  width: 806px;
-  height: 93px;
+.doubt-content {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  height: 450px;
+}
+
+.doubt-box {
+  display: flex;
+  width: 433.68px;
+  height: 120px;
+  /* background: #000000; */
+  box-shadow: 2px 4px 12px rgba(38, 38, 38, 0.1);
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+}
+
+.doubt-box:hover {
+  background: #000000;
+}
+
+.doubtbox-name {
+  height: 44px;
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #838383;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  color: rgba(0, 0, 0, 1);
 }
 
-.freeimg1 {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-
-.freeimgbg {
-  position: relative;
-}
-
-.freeimg3 {
-  position: relative;
-}
-
-.freebg {
-  position: absolute;
-  left: 500px;
-  top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
-  height: 70px;
+.doubt-box:hover {
   background: #000000;
-  border-radius: 15px;
+  color: white;
 }
 
-.freebg p {
-  width: 431.51px;
-  height: 56px;
+.doubt-box:hover .doubtbox-name {
+  color: white;
+  opacity: 50%;
+}
+
+.doubtbox-desc {
+  width: 255.81px;
+  height: 30px;
   font-family: Manrope;
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 41px;
-  text-align: center;
-  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #332f2f;
 }
 
-/* doubt section mobile view */
+.doubt-box:hover .doubtbox-desc {
+  color: white;
+  opacity: 50%;
+}
+
+.doubt-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.doubt-box-img img {
+  width: 60px;
+  height: 62.22px;
+}
+
+.doubt-box-img {
+  width: 81.52px;
+  height: 81.52px;
+  border-radius: 50%;
+  padding-top: 0.5rem;
+  padding-left: 0.7rem;
+  margin-right: 1rem;
+}
+
+.doubtbox-bg1 {
+  background: #e8965c;
+}
+
+.doubtbox-bg2 {
+  background: rgba(31, 83, 216, 0.5);
+}
+
+.doubtbox-bg3 {
+  background: rgba(240, 39, 135, 0.5);
+}
+
+.doubt-rightsection-name {
+  width: 413px;
+  height: 38px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.doubt-rightsection-desc {
+  width: 413.95px;
+  height: 39.46px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.blue-bg {
+  height: 300px;
+  width: 300px;
+  background: #26c5ec;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+
+.orange-bg {
+  height: 60px;
+  width: 60px;
+  background-color: #e8965c;
+  border-radius: 50%;
+  position: absolute;
+  left: 14rem;
+  top: 15rem;
+}
+
+.doubt-right-content img {
+  margin-top: 2rem;
+  margin-left: -1rem;
+  /* height: 250px; */
+  /* right: 13.5rem; */
+  position: absolute;
+  z-index: 1;
+}
+
+.doubt-mobile-view {
+  display: none;
+}
+/* doubt section desktop view */
+
+/* doubt mobile view */
 
 @media (max-width: 767px) {
-  .doubts {
+  .doubt-content {
     display: none;
   }
-}
 
-/* doubt */
+  .doubt-mobile-view {
+    display: inline;
+  }
+  .doubt-heading {
+    width: 200px;
+    height: 38px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+  }
+
+  .doubt-rightsection-name {
+    width: 390.45px;
+    height: 33px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #262626;
+  }
+  .doubt-box {
+    width: 369.9px;
+    height: 102.35px;
+    background: #000000;
+    box-shadow: 2px 4px 12px rgba(38, 38, 38, 0.1);
+    border-radius: 10px;
+  }
+
+  .doubtbox-name {
+    width: 186.87px;
+    height: 37.53px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: #fff;
+  }
+
+  .doubtbox-desc {
+    width: 238.39px;
+    height: 25.59px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+  }
+
+  .doubt-box-img {
+    width: 69.53px;
+    height: 69.53px;
+  }
+  .doubt-box-img img {
+    width: 51.18px;
+    height: 53.07px;
+  }
+  .blue-bg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .doubt-heading {
+    margin-block: 0px;
+  }
+
+  .doubt-mobile-img-row {
+    margin-bottom: 3rem;
+  }
+  .blue-bg {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-left: 3.5rem;
+    margin-top: -15rem;
+  }
+  .orange-bg {
+    position: relative;
+    top: 190px;
+    left: 10.4rem;
+  }
+  .doubt-mobile-img-row img {
+    position: relative;
+    z-index: 1;
+    margin-top: 4rem;
+  }
+}
 
 /* videos section desktop view */
 
@@ -616,18 +875,6 @@
 .video3 img {
   border-radius: 20px;
 }
-
-/* 
-.video1-img,
-.video2-img,
-.video3-img {
-  position: relative;
-  right: 1.5%;
-  width: 384.83px;
-  height: 192.79px;
-  background: #87e3ff;
-  border-radius: 20px;
-} */
 
 .video1-name,
 .video2-name,
@@ -782,27 +1029,27 @@
     display: none;
   }
 
-  /* @media (max-width: 1023px) and (min-width: 540px) {
+  @media (max-width: 400px) {
     .video1,
     .video2,
     .video3 {
-      width: 70%;
-    }
-    .video1-img,
-    .video2-img,
-    .video3-img {
-      position: relative;
-      right: 1%;
-      width: 100%;
+      height: 260px;
     }
   }
-  @media (max-width: 440px) {
+  @media (max-width: 500px) and (min-width: 400px) {
     .video1,
     .video2,
     .video3 {
-      height: 280.5px;
+      height: 280px;
     }
-  } */
+  }
+  @media (max-width: 280px) {
+    .video1,
+    .video2,
+    .video3 {
+      height: 220px;
+    }
+  }
 }
 /* video section */
 
@@ -923,7 +1170,7 @@
 
 /* mocktest mobile view */
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .free_mock {
     font-family: "Manrope", sans-serif;
     font-weight: 500;
@@ -992,6 +1239,7 @@
   }
 
   .mocktest_name {
+    width: 139px;
     font-weight: 800;
     font-style: normal;
     font-size: 16px;
@@ -1055,9 +1303,10 @@
 /* mock test */
 
 /* testimonial desktop view */
-.left-content {
+.testimonial-leftcontent {
   padding-top: 5rem;
 }
+
 .testimonial_card {
   width: 175px;
   height: 218.75px;
@@ -1109,10 +1358,12 @@
   top: 6rem;
   left: 5rem;
 }
+
 .card2 {
   position: relative;
   left: 17rem;
 }
+
 .card3 {
   position: relative;
   bottom: 6rem;
@@ -1196,18 +1447,28 @@
   left: 50%;
   transform: translate(-50%);
 }
+
 .testimonial-rightcontent1 {
   display: none;
 }
+
 /* testimonial mobile view */
 
 @media (max-width: 767px) {
   .testimonial-rightcontent {
     display: none;
   }
+
+  .testimonial-leftcontent {
+    padding-top: 11rem;
+  }
+
   .testimonial-rightcontent1 {
     display: block;
+    position: absolute;
+    top: -5rem;
   }
+
   .testimonial-card1 {
     width: 143.01px;
     height: 178.76px;
@@ -1253,6 +1514,7 @@
   }
 
   .testimonial {
+    position: relative;
     padding-inline: 1rem;
     margin-inline: 1rem;
     padding-bottom: 2rem;
@@ -1273,7 +1535,7 @@
 
   .testimonial-card-2 {
     position: absolute;
-    right: 2rem;
+    left: 10rem;
   }
 
   .testimonial-card-3 {
@@ -1473,15 +1735,6 @@
   position: relative;
   margin-top: 35%;
 }
-/* 
-.calltoaction {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  margin-top: -94%;
-  padding-left: 11%;
-} */
 
 .call-to-action {
   width: 90%;
@@ -1664,13 +1917,6 @@
     width: 100%;
   }
 
-  /* .iconborder1 i {
-    width: 29.14px;
-    height: 28.98px;
-    border-radius: 40px;
-    border: 1px solid #7c7c7c;
-    box-sizing: border-box;
-  } */
   .fab {
     padding-top: 2rem;
     font-size: 22px;
@@ -1733,27 +1979,28 @@
     height: 100px;
   }
 }
-/* @media (max-width: 550px) and (min-width: 500px) {
-    .tablet_img {
-      margin-top: -80px;
-    }
+@media (max-width: 550px) and (min-width: 500px) {
+  .tablet_img {
+    margin-top: -70px;
   }
-  @media (min-width: 350px) and (max-width: 380px) {
-    .solution {
-      font-size: 21px;
-    }
+}
+@media (min-width: 350px) and (max-width: 380px) {
+  .solution {
+    font-size: 21px;
   }
+}
 
-  @media (max-width: 290px) {
-    .heading {
-      font-size: 23px;
-    }} */
+@media (max-width: 290px) {
+  .heading {
+    font-size: 23px;
+  }
+}
 
-/* .details3-img {
-    width: 195.66px;
-    height: 50px;
-    border-radius: 5px;
-  } */
+.details3-img {
+  width: 195.66px;
+  height: 50px;
+  border-radius: 5px;
+}
 
 /* study material */
 
@@ -1865,9 +2112,19 @@
     justify-content: space-around;
   }
 
-  /* @media (max-width: 400px) {
+  @media (max-width: 400px) {
+    .study-head {
+      width: 140.77px;
+    }
+
     .study-head-desc {
       height: 45.78px;
+      width: fit-content;
+      padding-top: 0.75rem;
     }
-  } */
+
+    .study_card {
+      height: 235px;
+    }
+  }
 }
