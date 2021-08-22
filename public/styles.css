@@ -773,7 +773,7 @@
   }
 
   .doubtbox-name {
-    width: 186.87px;
+    /* width: 186.87px; */
     height: 37.53px;
     font-family: Manrope;
     font-style: normal;
@@ -784,7 +784,7 @@
   }
 
   .doubtbox-desc {
-    width: 238.39px;
+    /* width: 238.39px; */
     height: 25.59px;
     font-family: Manrope;
     font-style: normal;
@@ -798,7 +798,6 @@
     flex: none;
     width: 69.53px;
     height: 69.53px;
-    margin-left: 2rem;
   }
   .doubt-box-img img {
     width: 51.18px;
@@ -809,36 +808,41 @@
     margin-block: 0px;
   }
 
-  .doubt-mobile-img-row {
+  /* .doubt-mobile-img-row {
     margin-bottom: 6rem;
-  }
+  } */
   .doubt-mobileviewimg {
     position: absolute;
-    margin-top: 2rem;
+
+    /* margin-top: 4rem; */
     z-index: 1;
   }
 
   .doubt-mobileviewbgimage {
     position: relative;
-    left: 3.3rem;
-    top: 4.8rem;
-  }
-
-  .doubt-mobileviewbgimage img {
-    width: 300px;
-    height: 300px;
   }
 
   @media (max-width: 281px) {
+    .doubt-contents {
+      width: 60%;
+    }
+    .doubt-box-img {
+      margin-left: 1rem;
+    }
+    .doubtbox-desc {
+      width: 157px;
+    }
+    .doubt-mobile-steps-row {
+      padding-left: 0;
+      margin-top: 7rem;
+    }
     .doubt-mobileviewimg {
       margin-top: 4rem;
     }
     .doubt-mobileviewbgimage {
-      position: relative;
-      left: 2rem;
       top: 5.5rem;
+      padding-left: 2rem;
     }
-
     .doubt-mobileviewbgimage img {
       width: 200px;
       height: 200px;
@@ -846,6 +850,17 @@
   }
 
   @media (min-width: 282px) and (max-width: 321px) {
+    .doubt-contents {
+      width: 180px;
+    }
+    .doubtbox-desc {
+      /* width: 187px; */
+      width: 170px;
+    }
+    .doubt-mobile-steps-row {
+      margin-top: 9rem;
+      padding-left: 0;
+    }
     .doubt-box-img {
       margin-left: 10px;
     }
@@ -853,8 +868,7 @@
       margin-top: 5rem;
     }
     .doubt-mobileviewbgimage {
-      position: relative;
-      left: 2.2rem;
+      padding-left: 2.2rem;
       top: 6.6rem;
     }
 
@@ -862,32 +876,40 @@
       width: 230px;
       height: 230px;
     }
-    .doubt-mobile-steps-row {
-      padding-top: 2rem;
-    }
   }
 
   @media (min-width: 322px) and (max-width: 376px) {
+    .doubtbox-desc {
+      width: 187px;
+    }
+    .doubt-mobile-steps-row {
+      margin-top: 9rem;
+      padding-left: 2rem;
+    }
     .doubt-mobileviewimg {
-      margin-top: 4rem;
+      margin-top: 5.5rem;
     }
 
     .doubt-mobileviewbgimage {
-      left: 3rem;
-      top: 6.9rem;
+      padding-left: 2.2rem;
+      top: 6.7rem;
     }
     .doubt-mobileviewbgimage img {
-      width: 250px;
-      height: 250px;
-    }
-    .doubt-mobile-steps-row {
-      padding-top: 2rem;
+      width: 280px;
+      height: 280px;
     }
   }
 
-  @media (min-width: 377px) and (max-width: 412px) {
+  @media (min-width: 377px) and (max-width: 415px) {
+    .doubt-mobile-steps-row {
+      margin-top: 7rem;
+      padding-left: 2rem;
+    }
+    .doubt-mobileviewimg {
+      margin-top: 2.4rem;
+    }
     .doubt-mobileviewbgimage {
-      left: 3rem;
+      padding-left: 2.8rem;
       top: 4.5rem;
     }
     .doubt-mobileviewbgimage img {
@@ -896,10 +918,24 @@
     }
   }
 
-  @media (min-width: 413px) and (max-width: 550px) {
+  @media (min-width: 416px) and (max-width: 550px) {
+    .doubt-mobile-steps-row {
+      margin-top: 7rem;
+      padding-left: 6rem;
+    }
+    .doubt-mobileviewimg {
+      margin-top: 2.2rem;
+    }
+
+    .doubt-mobileviewbgimage {
+      padding-left: 4rem;
+
+      top: 5.5rem;
+    }
+
     .doubt-mobileviewbgimage img {
-      width: 350px;
-      height: 350px;
+      width: 340px;
+      height: 340px;
     }
   }
 }
