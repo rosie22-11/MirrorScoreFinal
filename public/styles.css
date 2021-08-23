@@ -6,7 +6,7 @@
   font-size: 18px;
   line-height: 27px;
   text-align: right;
-  color: rgb(153, 149, 149);
+  /* color: rgb(153, 149, 149); */
   flex-grow: 1;
   margin-block: auto;
 }
@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.navlink ul li:hover {
+  color: black;
+  text-decoration: underline;
+}
 .navbtn {
   font-family: "Reem Kufi";
   font-weight: 400;
@@ -41,6 +45,13 @@
   text-align: center;
 }
 
+.navbtn:hover {
+  background-color: #000;
+}
+
+.navbtn:hover a {
+  color: white;
+}
 /* navbar mobileview */
 
 @media (max-width: 767px) {
@@ -374,7 +385,7 @@
     font-family: Manrope;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 41px;
     align-items: center;
     text-align: center;
@@ -1069,8 +1080,8 @@
   .video1,
   .video2,
   .video3 {
-    width: 95%;
-    height: 330.75px;
+    width: 90%;
+    height: 320.75px;
     background: #ffffff;
     box-shadow: -5px 5px 10px 5px rgba(229, 229, 229, 0.25);
     border-radius: 10px;
@@ -1131,7 +1142,7 @@
     .video1,
     .video2,
     .video3 {
-      height: 230px;
+      height: 220px;
     }
   }
 
@@ -1155,7 +1166,7 @@
     .video1,
     .video2,
     .video3 {
-      height: 280px;
+      height: 270px;
     }
   }
 
@@ -1163,17 +1174,17 @@
     .video1,
     .video2,
     .video3 {
-      height: 320px;
+      height: 280px;
     }
   }
 
-  @media (min-width: 501px) and (max-width: 550px) {
+  /* @media (min-width: 501px) and (max-width: 550px) {
     .video1,
     .video2,
     .video3 {
-      height: 350px;
+      /* height: 350px; 
     }
-  }
+  } */
 }
 
 /* mock test desktop view*/
@@ -1270,21 +1281,21 @@
   width: 450px;
   height: 180px;
   background: #7bf6d8;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .mock_name2 {
   width: 450px;
   height: 180px;
   background: #ffe85e;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .mock_name3 {
   width: 450px;
   height: 180px;
   background: #feb3b1;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .mock_img {
@@ -1296,6 +1307,9 @@
   display: none;
 }
 
+.more_free_test {
+  box-shadow: 4px 5px 6px gray;
+}
 /* mocktest mobile view */
 
 @media (max-width: 767px) {
@@ -1354,21 +1368,21 @@
     width: 100%;
     height: 115px;
     background: #7bf6d8;
-    border-radius: 25px;
+    border-radius: 15px;
   }
 
   .mock_name2 {
     width: 100%;
     height: 115px;
     background: #ffe85e;
-    border-radius: 25px;
+    border-radius: 15px;
   }
 
   .mock_name3 {
     width: 100%;
     height: 115px;
     background: #feb3b1;
-    border-radius: 25px;
+    border-radius: 15px;
   }
 
   .mocktest_name {
