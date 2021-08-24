@@ -319,12 +319,14 @@
 
 
     <!-- mobile view of doubt section -->
-          <div class="doubt-mobile-view">
+        <div class="doubt-mobile-view">
           <div class="doubt-mobile-img-row ">
             <div class=" doubt-rightsection-name"><p>Click a photo of your doubt</p></div>
-            
-            <div class="doubt-mobileviewimg"><img src="./image/clickphoto.png" alt="clickPhoto.png"></div>
+            <div class="doubt-step-img">
+              <div class="doubt-mobileviewimg"><img src="./image/clickphoto.png" alt="clickPhoto.png"></div>
             <div class="doubt-mobileviewbgimage"><img  src="./image/Group 144.png"/></div>
+            
+            </div>
           </div>
           <div class="doubt-mobile-steps-row doubt-box">
               <div class="doubt-box-img doubtbox-bg1 "><img src="./image/doubtimg1.png" alt="clickpicimg"></div>
@@ -346,10 +348,10 @@
 
 
      <!-- mocktest -->
-     <section id="mocktest-section" class="mt-12 lg:pt-20 ">
+     <section id="mocktest-section" class="my-20 lg:mt-0 lg:py-20 ">
       <div class="mocktest-div ">
            <div class=" lg:max-w-none">
-               <div class="flex flex-col justify-around px-4 py-5 mb-4 lg:mb-0 lg:py-0 mock_name1">
+               <div class="flex flex-col justify-around px-4 py-5 mb-4 lg:mb-0 lg:py-2 mock_name1">
                    <div class="flex">
                    <div class="mock_img"><img src="./image/mockbook.png"  alt="note.jpg"/></div>
                    <div class="pl-4 mock_name lg:pl-4">
@@ -358,12 +360,14 @@
                    </div>
                    <div class="mocktest_free font-body"><p>Free</p></div>
                </div>
-               <div class="flex justify-end">
-                   <p class="start_test font-body">Start Test &RightArrow;</p>
-               </div>
+
+               <button class="flex justify-end">
+                 <div class="mocktest-startbtn"><p class="start_test font-body">Start Test <span class="mocktest-start-arrow">&RightArrow;</span></p></div>
+                   
+               </button>
                </div>
    
-               <div class="flex flex-col justify-around px-4 py-5 mb-4 lg:mb-0 lg:py-0 lg:mt-8 mock_name2">
+               <div class="flex flex-col justify-around px-4 py-5 mb-4 lg:mb-0 lg:py-2 lg:mt-8 mock_name2">
                    <div class="flex">
                    <div class="mock_img"><img src="./image/mockbook.png" alt="note.jpg"/></div>
                    <div class="pl-4 mock_name lg:pl-4">
@@ -372,11 +376,11 @@
                    </div>
                    <div class="mocktest_free font-body"><p>Free</p></div>
                    </div>
-                   <div class="flex justify-end">
-                   <p class="start_test font-body">Start Test &RightArrow;</p>
+                   <button class="flex justify-end">
+                    <div class="mocktest-startbtn"><p class="start_test font-body">Start Test <span class="mocktest-start-arrow">&RightArrow;</span></p></div>
+                   </button>
                </div>
-               </div>
-               <div class="flex flex-col justify-around px-4 py-5 mb-8 lg:mb-0 lg:py-0 lg:mt-8 mock_name3">
+               <div class="flex flex-col justify-around px-4 py-5 mb-8 lg:mb-0 lg:py-2 lg:mt-8 mock_name3">
                    <div class="flex">
                    <div class="mock_img"><img src="./image/mockbook.png" alt="note.jpg"/></div>
                    <div class="pl-4 mock_name" >
@@ -385,9 +389,9 @@
                    </div>
                    <div class="mocktest_free lg:ml-16 font-body"><p>Free</p></div>
                </div>
-               <div class="flex justify-end">
-                   <p class="start_test font-body">Start Test &RightArrow;</p>
-               </div>
+               <button class="flex justify-end">
+                <div class="mocktest-startbtn"><p class="start_test font-body">Start Test <span class="mocktest-start-arrow">&RightArrow;</span></p></div>
+               </button>
                </div>
    
                <div class="mx-auto more_free_test1"><button class="font-body">
@@ -403,7 +407,7 @@
                </div>
                <div class="hidden lg:inline-block lg:py-4 free_mock_img"><img src="./image/Rectangle 3.png" alt="mocktest"></div>
                <div class="mx-auto lg:hidden lg:py-4 free_mock_img"><img src="./image/mock2.png" alt="mocktest"></div>
-               <div class="more_free_test lg:mt-7"><p class=" font-body">Get more free Tests &RightArrow;</p></div>
+               <div class="more_free_test lg:mt-7"><button class=" font-body">Get more free Tests &RightArrow;</button></div>
                </p>
            </div>
    
@@ -417,7 +421,7 @@
 
   <!-- study matarial  -->
     <section id="study-material" class="py-10 lg:py-8 lg:mb-20">
-      <div class="lg:mx-auto lg:flex lg:max-w-5xl lg:mt-20">
+      <div class="lg:mx-auto lg:flex lg:max-w-5xl lg:my-20">
         <div class="max-w-lg mx-auto lg:pr-20">
           <div>
             <div class="lg:hidden">
@@ -510,7 +514,7 @@
 
 
      <!-- video -->
-     <section id="video-section" class="py-8">
+     <section id="video-section" class="py-12 my-12">
       <div class="lg:mx-auto lg:max-w-7xl">
         <div>
           <div class="text-center video-heading">2000+ Free Videos</div>
@@ -523,15 +527,13 @@
         </div>
         <div class="space-y-6 lg:space-y-0 lg:flex lg:flex-row lg:justify-around videos">
           <div class="video1">          
-              <img src="./image/video1.png" height="75%"/>
+              <img src="./image/video1.png"/>
             <div class="flex flex-row pl-4 mt-4 space-x-4">
               <div>
-                <div class="circle1">
-                  <svg class="play1">
-                    <path d="M12 10 L12 37 L35 25 Z" fill="white" />
-                  </svg>
-                </div>
+                <img src="./image/videoplaybtn.png"/>
               </div>
+               
+              
               <div class="videos1">
                 <p class="video1-name">Concept Videos</p>
                 <p class="video1-desc">From Class 6-10th</p>
@@ -540,14 +542,13 @@
           </div>
           <div class="video2">
            
-            <img src="./image/video2.png" height="75%"/>
+            <img src="./image/video2.png"/>
             <div class="flex flex-row pl-4 mt-4 space-x-4">
-              <div class="circle1">
-                <svg class="play1">
-                  <path d="M12 10 L12 37 L35 25 Z" fill="white" />
-                </svg>
-              </div>
               <div>
+                <img src="./image/videoplaybtn.png"/>
+              </div>
+             
+              <div  class="videos2">
                 <p class="video2-name">Important Videos</p>
                 <p class="video1-desc">From Class 6-10th</p>
               </div>
@@ -555,14 +556,13 @@
           </div>
           <div class="video3">
           
-            <img src="image/video3.png" height="75%"/>
+            <img src="image/video3.png"/>
             <div class="flex flex-row pl-4 mt-4 space-x-4">
-              <div class="circle1">
-                <svg class="play1">
-                  <path d="M12 10 L12 37 L35 25 Z" fill="white" />
-                </svg>
-              </div>
               <div>
+                <img src="./image/videoplaybtn.png"/>
+              </div>
+              
+              <div  class="videos3">
                 <p class="video3-name">Paper Videos</p>
                 <p class="video1-desc">From Class 6-10th</p>
               </div>
@@ -570,23 +570,14 @@
           </div>
         </div>
         <div class="flex justify-center">
-        <div class="mx-auto lg:max-w-sm">
-          <div>
-          <div class="circle">
-            <svg class="play">
-              <path d="M28 13 L28 65 L65 40 Z" fill="white"/>
-            </svg>
-            
-            <svg class="lg:hidden">
-              <path d="M19 10 L19 43 L45 28 Z" fill="white"/>
-            </svg>
-        
-          </div></div>
-          
-          <div class="watch-bg hover:bg-gray-800">
-            <p class="pt-2 pl-12 text-white lg:pt-3 watch-more">Watch More</p>
+      
+          <div class="play">
+            <img src="./image/videobtn.png" class="watchmore-playbtn"/>
           </div>
-        </div></div>
+          <div class="watch-bg">
+            <p class="pt-2 pl-5 text-white lg:pl-0 lg:pt-3 watch-more">Watch More</p>
+          </div>
+        </div>
       </div>
     </section>
   <!-- video -->
@@ -597,7 +588,7 @@
 
 
   <!-- testimonial-->
-      <section id="testimonial-section" class="pt-12 lg:pt-24">
+      <section id="testimonial-section" class="py-12">
         <div class="pb-20 text-center lg:pb-0">
           <div class="underline1 testimonial-title">
             <span>Students & Parents Love Us! </span>
@@ -608,7 +599,7 @@
           <div class="flex flex-col-reverse lg:flex-row lg:flex">
             <div class="testimonial-leftcontent">
               <!-- leftside -->
-              <div class="text-gray-500 lg:mb-12 testimonial-head">
+              <div class="text-gray-500 lg:my-12 testimonial-head">
                 What <span class="font-bold text-red-600">Anamika</span> has to
                 say about us,
               </div>
