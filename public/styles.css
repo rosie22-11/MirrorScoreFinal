@@ -6,7 +6,7 @@
   margin: 0;
   width: 100%;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 }
 .desktopNavbar {
   height: 80px;
@@ -149,7 +149,7 @@
     left: 0;
     background: white;
     /* height: 70vh; */
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     transition: all 0.5s ease;
   }
@@ -1122,16 +1122,8 @@
   border-radius: 50%;
 }
 
-.circle1 {
-  background: linear-gradient(135deg, #2ad9ff 0%, #26c5ec 100%);
-  box-shadow: -5px 5px 10px rgba(36, 186, 221, 0.2),
-    5px -5px 10px rgba(36, 186, 221, 0.2),
-    -5px -5px 10px rgba(44, 228, 255, 0.9), 5px 5px 13px rgba(36, 186, 221, 0.9),
-    inset 1px 1px 2px rgba(44, 228, 255, 0.3),
-    inset -1px -1px 2px rgba(36, 186, 221, 0.5);
-  height: 47px;
-  width: 45px;
-  border-radius: 50%;
+.videoplaybtn {
+  width: 70px;
 }
 
 .watchmore-playbtn {
@@ -1755,6 +1747,7 @@
     font-size: 30px;
     line-height: 40.98px;
     margin-bottom: 4rem;
+    padding-inline: 1rem;
   }
 
   .testimonial-head {
