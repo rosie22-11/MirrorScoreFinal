@@ -1603,38 +1603,12 @@
   transform: scale(1.1);
 }
 
-/* @keyframes jump {
-  100% {
-    border: 2px solid blue;
-    transform: scale(1.1, 1.1);
-    box-shadow: 4px 4px 22px 1px #888888;
-  }
-}
-
-.example {
-  animation-name: jump;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
-
-.example1 {
-  animation-name: jump;
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-
-.example2 {
-  animation-name: jump;
-  animation-duration: 1s;
-  animation-delay: 3s;
-} */
-
-.underline1 span {
+.underline1 .testimonialheading {
   display: inline-block;
   position: relative;
 }
 
-.underline1 span:after {
+.underline1 .testimonialheading:after {
   content: "";
   height: 1px;
   width: 90%;
