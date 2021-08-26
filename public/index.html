@@ -73,6 +73,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body>
 
@@ -80,7 +83,9 @@
   <!-- navbar -->
         <navbar>
           <div class="py-6 navb">
-            <div class=" desktopNavbar">
+          <div class=" desktopNavbar">
+           
+            
             <div class="md:mt-3 md:mr-96 nav">
               <img class="navimg" src="image/main-logo.png" />
            </div>
@@ -88,20 +93,51 @@
            
             <div class="flex navlink">
               <ul class="flex desktopNav">
-                <li><a href="#">Public Class</a></li>
+                <li ><a class="active" href="#">Public Class</a></li>
                 <li class="second-navlink"><a href="#">Study Materials</a></li>
                 <li class="third-navlink"><a href="#">Videos</a></li>
                 <li class="fourth-navlink"><a href="#">Free Doubts</a></li>
               </ul>
-              <div class="navbtn"><a href="#">Sign Up</a></div>
-              <div><i class="navBarBtn fa fa-bars fa-2x" aria-hidden="true"></i></div>
+              <!-- <div class="mobilenavlinkcard">
+                <div>
+                  <p class="mobileNavHeading">One-On-One Class</p>
+                  <p class="mobileNavDesc">Claim your free private class</p>
+                </div>
+                <img src="./image/exam.png" class="w-20 h-20"/>
+              </div>
+
+              <div class="mobilenavlinkcard1">
+                <div>
+                  <p class="mobileNavHeading">Download App</p>
+                  <p class="mobileNavDesc">Claim your free private class</p>
+                </div>
+                <img src="./image/exam.png" class="w-20 h-20"/>
+              </div> -->
+
+              <button class="navbtn"><a href="#">Sign Up</a></button>
+             <!-- <input type="checkbox" id="click"/>  -->
+              <!-- <div id="togglebtn"></div> -->
+              <label class="navBarBtn" id="togglebtn" onclick="navButtonClick()">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i> </label>
+       
+                 <!-- <i class="crossbtn fas fa-times fa-2x" aria-hidden="true"></i>  -->
+              
+
+              <!-- <label id="crossbtn" class=" navBarBtn">
+                <i class="hidden fas fa-times fa-2x" aria-hidden="true"></i>
+              </label> -->
+            
             </div>
           </div>
         </div>
 
             <!-- mobile view -->
-            <div class="mobileNavBar">
-      
+           <div class="mobilenavbar" id="mobilenavigation">
+             
+              <!-- <input type="checkbox" id="click"/>x
+              <label for="click" class="navBarBtn">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+              </label> -->
             <div class="mobile-navlink">
               <ul>
                 <li><a href="#">Public Class</a></li>
@@ -124,7 +160,7 @@
                 </div>
                 <img src="./image/exam.png" class="w-20 h-20"/>
               </div>
-            </div> 
+            </div>  
             
           </div>
         </navbar>
@@ -897,5 +933,8 @@
    </section>   
 
    <!-- footer section --> 
+
+
+   
 </body>
 </html>
