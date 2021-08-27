@@ -1743,6 +1743,80 @@
     line-height: 20.54px;
     padding-bottom: 1rem;
   }
+
+  @media (max-width: 281px) {
+    .testimonial-card-2 {
+      left: 4.5rem;
+    }
+
+    .testimonial-card-3 {
+      right: 0px;
+      left: -7.3rem;
+    }
+  }
+
+  @media (min-width: 282px) and (max-width: 321px) {
+    .testimonial-card-2 {
+      left: 7rem;
+    }
+    .testimonial-card-3 {
+      left: -6rem;
+    }
+    .testimonialmobilehead {
+      padding-bottom: 8rem;
+    }
+  }
+
+  @media (min-width: 370px) and (max-width: 376px) {
+    .testimonial-card-2 {
+      left: 10.5rem;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 412px) {
+    .testimonial-card-1 {
+      left: 2.5rem;
+    }
+
+    .testimonial-card-2 {
+      left: 10.5rem;
+    }
+    .testimonial-card-3 {
+      right: 3rem;
+    }
+  }
+
+  @media (min-width: 413px) and (max-width: 415px) {
+    .testimonial-card-1 {
+      left: 3rem;
+    }
+    .testimonial-card-3 {
+      right: 3rem;
+    }
+  }
+  @media (min-width: 499px) and (max-width: 511px) {
+    .testimonial-card-1 {
+      left: 3rem;
+    }
+    .testimonial-card-2 {
+      left: 15rem;
+    }
+    .testimonial-card-3 {
+      right: 1rem;
+    }
+  }
+
+  @media (min-width: 512px) and (max-width: 541px) {
+    .testimonial-card-1 {
+      left: 5rem;
+    }
+    .testimonial-card-2 {
+      left: 15rem;
+    }
+    .testimonial-card-3 {
+      right: -0.5rem;
+    }
+  }
 }
 
 /* achievement  desktop view*/
