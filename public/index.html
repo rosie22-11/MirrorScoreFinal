@@ -77,12 +77,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
   </head>
-  <body>
+  <body onscroll="changeNavbarBackground()">
 
 
   <!-- navbar -->
         <navbar>
-          <div class="py-6 navb">
+          <div class="py-6 navb" id="navbg">
           <div class=" desktopNavbar">
            
             
@@ -98,34 +98,13 @@
                 <li class="third-navlink"><a href="#">Videos</a></li>
                 <li class="fourth-navlink"><a href="#">Free Doubts</a></li>
               </ul>
-              <!-- <div class="mobilenavlinkcard">
-                <div>
-                  <p class="mobileNavHeading">One-On-One Class</p>
-                  <p class="mobileNavDesc">Claim your free private class</p>
-                </div>
-                <img src="./image/exam.png" class="w-20 h-20"/>
-              </div>
-
-              <div class="mobilenavlinkcard1">
-                <div>
-                  <p class="mobileNavHeading">Download App</p>
-                  <p class="mobileNavDesc">Claim your free private class</p>
-                </div>
-                <img src="./image/exam.png" class="w-20 h-20"/>
-              </div> -->
+              
 
               <button class="navbtn"><a href="#">Sign Up</a></button>
-             <!-- <input type="checkbox" id="click"/>  -->
-              <!-- <div id="togglebtn"></div> -->
+          
               <label class="navBarBtn" id="togglebtn" onclick="navButtonClick()">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i> </label>
        
-                 <!-- <i class="crossbtn fas fa-times fa-2x" aria-hidden="true"></i>  -->
-              
-
-              <!-- <label id="crossbtn" class=" navBarBtn">
-                <i class="hidden fas fa-times fa-2x" aria-hidden="true"></i>
-              </label> -->
             
             </div>
           </div>
@@ -134,10 +113,7 @@
             <!-- mobile view -->
            <div class="mobilenavbar" id="mobilenavigation">
              
-              <!-- <input type="checkbox" id="click"/>x
-              <label for="click" class="navBarBtn">
-                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-              </label> -->
+              
             <div class="mobile-navlink">
               <ul>
                 <li><a href="#">Public Class</a></li>
@@ -273,7 +249,11 @@
       <div class="mb-12 price md:mb-0">
          <div class="py-8 md:absolute md:pt-8 md:py-0 priceContent md:mx-auto">
         <div class="price-head">
-          <p class="mb-8 md:mb-0">Pricing starts as low as &#8377; 100 per class</p>
+          <p class="hidden mb-8 md:block md:mb-0">Pricing starts as low as &#8377; 100 per class</p>
+          <div class="block mb-8 md:hidden md:mb-0 lg:hidden mobilepriceheading">
+          <p >Price starts as low as</p>
+          <p>&#8377; 100 per class</p>
+        </div>
           <p class=" md:mx-auto price-content">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
             obcaecati ducimus voluptate consectetur quidem autem dolor itaque at
@@ -476,8 +456,8 @@
                     learning goals. With over 120,000 syllabus combinations
                      at their disposal to choose from, learning was never so easy.   </p>               
                </div>
-               <div class="hidden lg:inline-block lg:py-4 free_mock_img"><img src="./image/Rectangle 3.png" alt="mocktest"></div>
-               <div class="mx-auto lg:hidden lg:py-4 free_mock_img"><img src="./image/mock2.png" alt="mocktest"></div>
+               <div class=" lg:py-4 free_mock_img"><img src="./image/Rectangle 3.png" alt="mocktest"></div>
+               <!-- <div class="mx-auto lg:hidden lg:py-4 free_mock_img"><img src="./image/mock2.png" alt="mocktest"></div> -->
                <div class="more_free_test lg:mt-7"><button class=" font-body">Get more free Tests &RightArrow;</button></div>
                </p>
            </div>

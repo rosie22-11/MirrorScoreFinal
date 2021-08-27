@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss source/style.css -o public/style.css"
-
+    "build": "tailwindcss ./source/style.css -o ./public/style.css",
+    "prod": "NODE_ENV=production tailwindcss ./source/style.css -o ./public/style.css"
   },
   "keywords": [],
   "author": "",
