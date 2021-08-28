@@ -294,7 +294,7 @@
 .mainbtn input[type="text"]:focus {
   outline: none;
 }
-
+/* 
 .playbtn {
   width: 180px;
   height: 55.26px;
@@ -306,7 +306,7 @@
 .playbtn img {
   margin-inline: auto;
   padding-top: 8px;
-}
+} */
 
 .mainarrow {
   margin-top: 5px;
@@ -380,10 +380,10 @@
     margin-inline: auto;
   }
 
-  .playbtn img {
+  /* .playbtn img {
     width: 125.58px;
     height: 32.09px;
-  }
+  } */
 
   .mainarrow {
     margin-top: 5px;
@@ -2345,6 +2345,9 @@
   border-radius: 40px;
   padding: 4px;
   color: white;
+}
+
+.iconborder {
   margin-left: -2rem;
 }
 
