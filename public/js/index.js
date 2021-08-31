@@ -21,6 +21,45 @@ function navButtonClick() {
 //     ele.style.background = "white";
 //   }
 // }
+window.onscroll = function () {
+  DoubtStepsAnimation();
+};
+function DoubtStepsAnimation() {
+  let elmone = document.querySelector("#doubt-box-one");
+  let elmtwo = document.querySelector("#doubt-box-two");
+  let elmthree = document.querySelector("#doubt-box-three");
+  // console.log(elmone)
+  setTimeout(function () {
+    elmthree.classList.remove("doubt-box-blacked");
+    elmtwo.classList.remove("doubt-box-blacked");
+    elmone.classList.add("doubt-box-blacked");
+  }, 1000);
+  setTimeout(function () {
+    elmone.classList.remove("doubt-box-blacked");
+    elmthree.classList.remove("doubt-box-blacked");
+    elmtwo.classList.add("doubt-box-blacked");
+  }, 5250);
+  setTimeout(function () {
+    elmone.classList.remove("doubt-box-blacked");
+    elmtwo.classList.remove("doubt-box-blacked");
+    elmthree.classList.add("doubt-box-blacked");
+  }, 8750);
+}
+
+setInterval(function () {
+  // $("#doubt-steps-video").play()
+  DoubtStepsAnimation();
+}, 12000);
+
+// setInterval(DoubtStepsAnimation(), 5500)
+
+$("#doubt-steps-video").click(function () {
+  if (this.paused) this.play();
+  else this.pause();
+});
+
+//testimonial
+
 function start() {
   let card1 = document.getElementById("cardanimation");
   let card2 = document.getElementById("cardanimation2");
