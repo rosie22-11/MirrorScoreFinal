@@ -60,16 +60,16 @@ $("#doubt-steps-video").click(function () {
 
 //testimonial
 
-function start() {
-  let card1 = document.getElementById("cardanimation");
-  let card2 = document.getElementById("cardanimation2");
-  let card3 = document.getElementById("cardanimation3");
+// function start() {
+//   let card1 = document.getElementById("cardanimation");
+//   let card2 = document.getElementById("cardanimation2");
+//   let card3 = document.getElementById("cardanimation3");
 
-  card1.style.animation = "cardcycle 1s 1s";
-  card2.style.animation = "cardcycle 1s 2s";
-  card3.style.animation = "cardcycle 1s 3s";
-}
+//   card1.style.animation = "cardcycle 1s 1s";
+//   card2.style.animation = "cardcycle 1s 2s";
+//   card3.style.animation = "cardcycle 1s 3s";
+// }
 
-function testimonialcardAnimation() {
-  setInterval(start);
-}
+// function testimonialcardAnimation() {
+//   setInterval(start);
+// }
