@@ -1768,30 +1768,52 @@
     grid-auto-flow: column;
   }
 
-  #slider .testimonial-card1 {
+  /* #slider .testimonial-card1 {
     background-color: red;
-  }
+  } */
 
-  @keyframes animate {
+  @keyframes animate-red {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
-    20%,
-    40% {
-      transform: translateX(100%) scale(0.5);
+    50% {
+      transform: translateX(-50%) scale(1.2);
+      z-index: 1;
     }
     100% {
       transform: translateX(-100%);
     }
   }
+
+  @keyframes animate-yellow {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes animate-blue {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(35%);
+    }
+  }
   .testimonial-card-1 {
     position: relative;
-    animation: animate 15s linear infinite;
+    /* background-color: yellow; */
+    /* animation: animate-yellow 15s linear infinite; */
   }
 
   .testimonial-card-2 {
     position: absolute;
     left: 9.7rem;
+    /* background-color: red; */
+    /* animation: animate-red 15s linear infinite; */
   }
 
   .testimonial-card-3 {
@@ -1799,7 +1821,9 @@
     right: 4rem;
     height: 198px;
     width: 163px;
+    /* background-color: blue; */
     margin-top: -10px;
+    /* animation: animate-blue 15s linear infinite; */
   }
 
   .testimonial-title {

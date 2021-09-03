@@ -77,13 +77,13 @@ $("#doubt-steps-video").click(function () {
 //   setInterval(start);
 // }
 
-// $("#mobile-doubtsection > div:gt(0)").hide();
+$("#mobile-doubtsection > div:gt(0)").hide();
 
-// setInterval(function () {
-//   $("#mobile-doubtsection > div:first")
-//     .fadeOut(1000)
-//     .next()
-//     .fadeIn(1000)
-//     .end()
-//     .appendTo("#mobile-doubtsection");
-// }, 4000);
+setInterval(function () {
+  $("#mobile-doubtsection > div:first")
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo("#mobile-doubtsection");
+}, 4000);
