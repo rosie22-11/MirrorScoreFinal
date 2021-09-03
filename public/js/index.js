@@ -1,6 +1,9 @@
 function navButtonClick() {
   let x = document.getElementById("mobilenavigation");
+  // let i = document.querySelector("#togglebtn > i");
+  let i = document.getElementById("togglebtn");
   console.log(x);
+  console.log(i);
   if (x.style.top === "") {
     x.style.top = "80px";
   } else {
@@ -73,3 +76,14 @@ $("#doubt-steps-video").click(function () {
 // function testimonialcardAnimation() {
 //   setInterval(start);
 // }
+
+// $("#mobile-doubtsection > div:gt(0)").hide();
+
+// setInterval(function () {
+//   $("#mobile-doubtsection > div:first")
+//     .fadeOut(1000)
+//     .next()
+//     .fadeIn(1000)
+//     .end()
+//     .appendTo("#mobile-doubtsection");
+// }, 4000);

@@ -112,6 +112,7 @@
 
             <label class="navBarBtn" id="togglebtn" onclick="navButtonClick()">
               <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+              <!-- <i class="fas fa-times fa-2x"></i> -->
             </label>
           </div>
         </div>
@@ -131,7 +132,7 @@
               <p class="mobileNavHeading">One-On-One Class</p>
               <p class="mobileNavDesc">Claim your free private class</p>
             </div>
-            <img src="./image/navbartoggleimg.png" class="w-20 h-20" />
+            <img src="./image/navbartoggleimg.png" style="width: 30%;" />
           </div>
 
           <div class="mobileNavlinkCard">
@@ -139,7 +140,7 @@
               <p class="mobileNavHeading">Download App</p>
               <p class="mobileNavDesc">Claim your free private class</p>
             </div>
-            <img src="./image/navbartoggleimg1.png" class="w-20 h-20" />
+            <img src="./image/navbartoggleimg1.png"  style="width: 25%;"/>
           </div>
         </div>
       </div>
@@ -149,7 +150,7 @@
     <!--mainsection-->
     <section id="main-section" class="mt-24 mb-12 md:mt-24 md:mb-0">
       <div
-        class="py-4 mx-auto  lg:py-0 lg:flex lg:flex-row lg:justify-around mainpage"
+        class="py-4 mx-auto lg:py-0 lg:flex lg:flex-row lg:justify-around mainpage"
       >
         <div class="maincontent">
           <div class="mainhead">
@@ -180,7 +181,7 @@
     <!--One on One Class-->
     <section id="1on1class" class="md:py-10">
       <div
-        class="mx-auto mb-12  one1onealign lg:gap-6 lg:flex lg:flex-row lg:max-w-7xl"
+        class="mx-auto mb-12 one1onealign lg:gap-6 lg:flex lg:flex-row lg:max-w-7xl"
       >
         <div class="my-6 lg:ml-14 lg:my-0 on1card1">
           <div><p>One-On-One Private Class</p></div>
@@ -406,17 +407,46 @@
                 Your browser does not support the video tag.
               </video>
             </div>
+          </div>
 
-            <div class="doubt-mobile-steps-row doubt-box">
-              <div class="doubt-box-img doubtbox-bg1">
-                <img src="./image/doubtimg1.png" alt="clickpicimg" />
+          <div id="mobile-doubtsection" class="doubt-mobile-steps-row">
+            
+              <div class="doubt-box">
+                <div class="doubt-box-img doubtbox-bg1">
+                  <img src="./image/doubtimg1.png" alt="clickpicimg" />
+                </div>
+                <div class="doubt-contents">
+                  <p class="doubtbox-name">Step 1</p>
+                  <p class="doubtbox-desc">Click Picture and Upload</p>
+                </div>
               </div>
-              <div class="doubt-contents">
-                <p class="doubtbox-name">Step 1</p>
-                <p class="doubtbox-desc">Click Picture and Upload</p>
+            
+
+            
+              <div class="doubt-box doubt-box-two" id="doubt-box-two">
+                <div class="doubt-box-img doubtbox-bg2">
+                  <img src="./image/doubtimg2.png" alt="connecttutorimg" />
+                </div>
+                <div class="doubt-contents">
+                  <p class="doubtbox-name">Step 2</p>
+                  <p class="doubtbox-desc">Connect To Our Tutor</p>
+                </div>
+              </div>
+            
+
+            
+              <div class="doubt-box doubt-box-three" id="doubt-box-three">
+                <div class="doubt-box-img doubtbox-bg3">
+                  <img src="./image/doubtimg3.png" alt="getanswerImg" />
+                </div>
+                <div class="doubt-contents">
+                  <p class="doubtbox-name">Step 3</p>
+                  <p class="doubtbox-desc">Get Answered</p>
+                </div>
               </div>
             </div>
-            <!-- <div class="doubt-step-img">
+          </div>
+          <!-- <div class="doubt-step-img">
               <div class="doubt-mobileviewimg">
                 <img src="./image/clickphoto.png" alt="clickPhoto.png" />
               </div>
@@ -424,16 +454,6 @@
                 <img src="./image/Group 144.png" />
               </div>
             </div> -->
-          </div>
-          <!-- <div class="doubt-mobile-steps-row doubt-box">
-            <div class="doubt-box-img doubtbox-bg1">
-              <img src="./image/doubtimg1.png" alt="clickpicimg" />
-            </div>
-            <div class="doubt-contents">
-              <p class="doubtbox-name">Step 1</p>
-              <p class="doubtbox-desc">Click Picture and Upload</p>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -446,7 +466,7 @@
       <div class="mocktest-div">
         <div class="lg:max-w-none">
           <div
-            class="flex flex-col justify-around px-4 py-16 mb-4  lg:mb-0 mock_name1"
+            class="flex flex-col justify-around px-4 py-16 mb-4 lg:mb-0 mock_name1"
           >
             <div class="flex">
               <div class="mock_img">
@@ -472,7 +492,7 @@
           </div>
 
           <div
-            class="flex flex-col justify-around px-4 py-16 mb-4  lg:mb-0 lg:mt-8 mock_name2"
+            class="flex flex-col justify-around px-4 py-16 mb-4 lg:mb-0 lg:mt-8 mock_name2"
           >
             <div class="flex">
               <div class="mock_img">
@@ -496,7 +516,7 @@
             </button>
           </div>
           <div
-            class="flex flex-col justify-around px-4 py-16 mb-8  lg:mb-0 lg:mt-8 mock_name3"
+            class="flex flex-col justify-around px-4 py-16 mb-8 lg:mb-0 lg:mt-8 mock_name3"
           >
             <div class="flex">
               <div class="mock_img">
@@ -562,12 +582,12 @@
               />
             </div>
             <div
-              class="text-5xl font-semibold text-center  font-body lg:text-left lg:text-4xl lg:font-extrabold"
+              class="text-5xl font-semibold text-center font-body lg:text-left lg:text-4xl lg:font-extrabold"
             >
               Study Material
             </div>
             <div
-              class="pt-6 mx-auto text-center  lg:text-left lg:pt-6 study_sub_content"
+              class="pt-6 mx-auto text-center lg:text-left lg:pt-6 study_sub_content"
             >
               Students can chart their own path by creating customized syllabus
               that helps them attain their learning goals. With over 120,000
@@ -584,10 +604,10 @@
           </div>
         </div>
         <div
-          class="flex flex-wrap max-w-sm py-10 mx-auto  studycard lg:max-w-md lg:py-0 lg:grid lg:grid-cols-2 lg:w-full lg:gap-3"
+          class="flex flex-wrap max-w-sm py-10 mx-auto studycard lg:max-w-md lg:py-0 lg:grid lg:grid-cols-2 lg:w-full lg:gap-3"
         >
           <div
-            class="px-3 pt-5 mb-6 mr-16  lg:px-4 lg:pt-10 lg:mb-0 lg:mr-0 study_card study1_bg"
+            class="px-3 pt-5 mb-6 mr-16 lg:px-4 lg:pt-10 lg:mb-0 lg:mr-0 study_card study1_bg"
           >
             <img src="./image/book.png" alt="book.png" class="book-img" />
             <div class="study-head">NCERT Books</div>
@@ -617,7 +637,7 @@
             </div>
           </div>
           <div
-            class="px-3 pt-5 mr-16  lg:px-4 lg:pt-10 lg:mr-0 study_card study3_bg"
+            class="px-3 pt-5 mr-16 lg:px-4 lg:pt-10 lg:mr-0 study_card study3_bg"
           >
             <img src="./image/patent.png" alt="patent.png" class="patent-img" />
             <div class="study-head">Revision Note</div>
@@ -669,7 +689,7 @@
           </div>
         </div>
         <div
-          class="space-y-6  lg:space-y-0 lg:flex lg:flex-row lg:justify-around videos"
+          class="space-y-6 lg:space-y-0 lg:flex lg:flex-row lg:justify-around videos"
         >
           <div class="video1">
             <img src="./image/video1.png" />
@@ -754,7 +774,7 @@
               class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
             ></div>
             <div
-              class="space-x-1 space-y-2 text-center text-yellow-400  lg:text-left"
+              class="space-x-1 space-y-2 text-center text-yellow-400 lg:text-left"
             >
               <div class="fa fa-star fa-2x"></div>
               <div class="fa fa-star fa-2x"></div>
@@ -851,7 +871,7 @@
         <div class="achievementbg-height lg:max-w-4xl lg:py-24 lg:mx-auto">
           <div class="lg:grid lg:grid-cols-2">
             <div
-              class="flex py-1 pl-1 my-8 space-x-2 transform  lg:my-0 lg:pl-4 lg:pt-9 cardbackground card-shadow hover:scale-105"
+              class="flex py-1 pl-1 my-8 space-x-2 transform lg:my-0 lg:pl-4 lg:pt-9 cardbackground card-shadow hover:scale-105"
             >
               <div class="pt-3 lg:pt-0">
                 <img
@@ -874,7 +894,7 @@
               </div>
             </div>
             <div
-              class="flex float-right py-1 pl-1 mb-8 space-x-2 transform bg-white  lg:mb-0 lg:pl-4 lg:ml-12 lg:pt-9 card-shadow hover:scale-105"
+              class="flex float-right py-1 pl-1 mb-8 space-x-2 transform bg-white lg:mb-0 lg:pl-4 lg:ml-12 lg:pt-9 card-shadow hover:scale-105"
             >
               <div class="pt-3 lg:pt-0">
                 <img
@@ -897,7 +917,7 @@
               </div>
             </div>
             <div
-              class="flex py-1 pl-1 mb-8 space-x-2 transform bg-white  lg:mb-0 lg:pl-2 lg:mt-14 lg:pt-9 card-shadow hover:scale-105"
+              class="flex py-1 pl-1 mb-8 space-x-2 transform bg-white lg:mb-0 lg:pl-2 lg:mt-14 lg:pt-9 card-shadow hover:scale-105"
             >
               <div class="pt-3 lg:pt-0">
                 <img
@@ -920,7 +940,7 @@
               </div>
             </div>
             <div
-              class="flex float-right py-1 pl-1 space-x-2 transform bg-white  lg:pl-4 lg:ml-12 lg:mt-14 lg:pt-9 card-shadow hover:scale-105"
+              class="flex float-right py-1 pl-1 space-x-2 transform bg-white lg:pl-4 lg:ml-12 lg:mt-14 lg:pt-9 card-shadow hover:scale-105"
             >
               <div class="pt-3 lg:pt-0">
                 <img
@@ -960,7 +980,7 @@
         <div class="mx-auto lg:max-w-6xl footer-details">
           <div><hr /></div>
           <div
-            class="grid grid-cols-2  lg:space-x-0 lg:flex lg:justify-between lg:py-4 details1"
+            class="grid grid-cols-2 lg:space-x-0 lg:flex lg:justify-between lg:py-4 details1"
           >
             <ul>
               <p class="details1-head1">SUBJECTS</p>
@@ -1050,7 +1070,7 @@
 
       <div class="calltoaction">
         <div
-          class="mx-auto text-center  lg:text-left lg:px-16 lg:py-24 call-to-action"
+          class="mx-auto text-center lg:text-left lg:px-16 lg:py-24 call-to-action"
         >
           <div>
             <div class="heading">Get the learning app</div>
