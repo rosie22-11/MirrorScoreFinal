@@ -85,6 +85,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/hover.css@2.3.2/css/hover.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css" />
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
@@ -462,7 +465,7 @@
     <!--doubt section-->
 
     <!-- mocktest -->
-    <section id="mocktest-section" class="mb-12 mt-28 md:mb-0 lg:mt-0 lg:py-20">
+    <section id="mocktest-section" class="mt-24 mb-12 md:mb-0 lg:mt-0 lg:py-20">
       <div class="mocktest-div">
         <div class="lg:max-w-none">
           <div
@@ -570,7 +573,7 @@
     <!-- mock test -->
 
     <!-- study matarial  -->
-    <section id="study-material" class="py-10 lg:py-8">
+    <section id="study-material" class="py-12 lg:py-8">
       <div class="lg:mx-auto lg:flex lg:max-w-5xl lg:my-12">
         <div class="max-w-lg mx-auto lg:pr-20">
           <div>
@@ -677,7 +680,7 @@
     <!-- study material -->
 
     <!-- video -->
-    <section id="video-section" class="py-12 my-12">
+    <section id="video-section" class="py-12">
       <div class="lg:mx-auto lg:max-w-7xl">
         <div>
           <div class="text-center video-heading">2000+ Free Videos</div>
@@ -761,10 +764,10 @@
           <div class="testimonial-leftcontent">
             <!-- leftside -->
             <div class="text-gray-500 lg:my-12 testimonial-head">
-              What <span class="font-bold text-red-600">Anamika</span> has to
+              What <span class="font-bold text-red-600" id="testimonial-reviewname">Anamika</span> has to
               say about us,
             </div>
-            <div class="testimonial-content">
+            <div class="testimonial-content" id="testimonial-reviewcontent">
               Mock tests on Toppr helped me develop my exam strategy. I was able
               to focus on my shortcomings and improve them! Mock tests on Toppr
               helped me develop my exam strategy. I was able to focus on my
@@ -787,37 +790,168 @@
           <!-- rightside-->
 
           <div class="testimonial-rightcontent">
-            <div class="testimonial_card card1" id="cardanimation">
+            <div class="testimonial_card card1" id="cardanimation" onclick="desktopcard1()" onmouseover="desktophovercard1()">
               <div class="px-10 md:px-5">
                 <img src="./image/photo.jpg" class="testimonial-card-img" />
               </div>
               <div class="testimonial-card-name">Anamika Xyz</div>
-              <div class="testimonial-class">Class 7th</div>
+              <div class="testimonial-class">Class 10th</div>
             </div>
 
-            <div class="testimonial_card card2" id="cardanimation2">
+            <div class="testimonial_card card2" id="cardanimation2" onclick="desktopcard2()" onmouseover="desktophovercard2()">
               <div class="px-10 md:px-5">
                 <img src="./image/photo.jpg" class="testimonial-card-img" />
               </div>
-              <div class="testimonial-card-name">Anamika Xyz</div>
-              <div class="testimonial-class">Class 7th</div>
+              <div class="testimonial-card-name">Radhika Xyz</div>
+              <div class="testimonial-class">Class 11th</div>
             </div>
 
-            <div class="testimonial_card card3" id="cardanimation3">
+            <div class="testimonial_card card3" id="cardanimation3" onclick="desktopcard3()" onmouseover="desktophovercard3()">
               <div class="px-10 md:px-5">
                 <img src="./image/photo.jpg" class="testimonial-card-img" />
               </div>
-              <div class="testimonial-card-name">Anamika Xyz</div>
-              <div class="testimonial-class">Class 7th</div>
+              <div class="testimonial-card-name">Sonam Xyz</div>
+              <div class="testimonial-class">Class 12th</div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- mobile view testimonial card -->
+
+
+
+          <div class="mobileview-testimonial">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards">
+              <label class="card" for="item-1" id="testimonial-1" onclick="card1()">
+                <div class="testimonial-card1 testimonial-card-1">
+                  <div class="pb-4 md:pb-0">
+                    <img src="./image/photo.jpg" class="testimonial-card-img1" />
+                  </div>
+                  <div class="testimonial-card-name1">Anamika Xyz</div>
+                  <div class="testimonial-class1">Class 10th</div>
+                </div>
+              </label>
+              <label class="card" for="item-2" id="testimonial-2" onclick="card2()">
+                <div class="testimonial-card1 testimonial-card-2">
+                  <div class="pb-4 md:pb-0">
+                    <img src="./image/photo.jpg" class="testimonial-card-img1" />
+                  </div>
+                  <div class="testimonial-card-name1">Radhika Xyz</div>
+                  <div class="testimonial-class1">Class 11th</div>
+                </div>
+              </label>
+              <label class="card" for="item-3" id="testimonial-3" onclick="card3()">
+                <div class="testimonial-card1 testimonial-card-3">
+                  <div class="pb-4 md:pb-0">
+                    <img src="./image/photo.jpg" class="testimonial-card-img1" />
+                  </div>
+                  <div class="testimonial-card-name1">Sonam Xyz</div>
+                  <div class="testimonial-class1">Class 12th</div>
+                </div>
+              </label>
+            </div>
+            <div class="testimonial-text">
+              <div class="upper-part">
+                <div class="testimonial-info-area" id="test">
+                  <label class="testimonial-info" id="testimonial-info-1">
+                    <div class="testimonial-leftcontent" id="testimonial1">
+                      <!-- leftside -->
+                      <div class="text-gray-500 lg:my-12 mobile-testimonial-head">
+                        What <span class="font-bold text-red-600">Anamika</span> has to
+                        say about us,
+                      </div>
+                      <div class="mobile-testimonial-content">
+                        Mock tests on Toppr helped me develop my exam strategy. I was able
+                        to focus on my shortcomings and improve them! Mock tests on Toppr
+                        helped me develop my exam strategy. I was able to focus on my
+                        shortcomings and improve them!
+                      </div>
+                      <div
+                        class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
+                      ></div>
+                      <div
+                        class="space-x-1 space-y-2 text-center text-yellow-400 lg:text-left"
+                      >
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="testimonial-info " id="testimonial-info-2">
+                    <!-- <div class="testimonial-content"></div> -->
+                    <div class="hidden testimonial-leftcontent" id="testimonial2">
+                      <!-- leftside -->
+                      <div class="text-gray-500 lg:my-12 mobile-testimonial-head">
+                        What <span class="font-bold text-red-600">Anamika</span> has to
+                        say about us,
+                      </div>
+                      <div class="mobile-testimonial-content">
+                        Mock tests on Toppr helped me develop my exam strategy. I was able
+                        to focus on my shortcomings and improve them! Mock tests on Toppr
+                        helped me develop my exam strategy. I was able to focus on my
+                        shortcomings and improve them!
+                      </div>
+                      <div
+                        class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
+                      ></div>
+                      <div
+                        class="space-x-1 space-y-2 text-center text-yellow-400 lg:text-left"
+                      >
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="testimonial-info" id="testimonial-info-3">
+                    <!-- <div class="testimonial-content"></div> -->
+                    <div class="hidden testimonial-leftcontent" id="testimonial3">
+                      <!-- leftside -->
+                      <div class="text-gray-500 lg:my-12 mobile-testimonial-head">
+                        What <span class="font-bold text-red-600">Anamika</span> has to
+                        say about us,
+                      </div>
+                      <div class="mobile-testimonial-content">
+                        Mock tests on Toppr helped me develop my exam strategy. I was able
+                        to focus on my shortcomings and improve them! Mock tests on Toppr
+                        helped me develop my exam strategy. I was able to focus on my
+                        shortcomings and improve them!
+                      </div>
+                      <div
+                        class="hidden border-t-2 border-black lg:mt-4 lg:w-60 lg:block"
+                      ></div>
+                      <div
+                        class="space-x-1 space-y-2 text-center text-yellow-400 lg:text-left"
+                      >
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                        <div class="fa fa-star fa-2x"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- mobile view testimonial card -->
-          <div class="testimonial-rightcontent1">
+
+
+          <!-- <div class="testimonial-rightcontent1">
             <div id="slider">
+            
               <div class="images">
                 <div class="testimonial-card1 testimonial-card-1">
-                  <div class="">
+                  <div class="pb-4 md:pb-0">
                     <img
                       src="./image/photo.jpg"
                       class="testimonial-card-img1"
@@ -830,7 +964,7 @@
 
               <div class="images">
                 <div class="testimonial-card1 testimonial-card-2">
-                  <div class="">
+                  <div class="pb-4 md:pb-0">
                     <img
                       src="./image/photo.jpg"
                       class="testimonial-card-img1"
@@ -843,7 +977,7 @@
 
               <div class="images">
                 <div class="testimonial-card1 testimonial-card-3">
-                  <div class="">
+                  <div class="pb-4 md:pb-0">
                     <img
                       src="./image/photo.jpg"
                       class="testimonial-card-img1"
@@ -853,12 +987,14 @@
                   <div class="testimonial-class1">Class 7th</div>
                 </div>
               </div>
+
+            
+            
             </div>
-          </div>
+          </div> -->
 
           <!-- mobile view testimonial card -->
-        </div>
-      </div>
+       
     </section>
     <!-- testimonial -->
 
@@ -885,7 +1021,7 @@
                   <span
                     data-purecounter-start="1"
                     data-purecounter-end="25000"
-                    data-purecounter-duration="2"
+                    data-purecounter-duration="5"
                     class="purecounter"
                   >
                     1 </span
@@ -908,7 +1044,7 @@
                   <span
                     data-purecounter-start="1"
                     data-purecounter-end="25000"
-                    data-purecounter-duration="2"
+                    data-purecounter-duration="5"
                     class="purecounter"
                   >
                     1 </span
@@ -931,7 +1067,7 @@
                   <span
                     data-purecounter-start="1"
                     data-purecounter-end="25000"
-                    data-purecounter-duration="2"
+                    data-purecounter-duration="5"
                     class="purecounter"
                   >
                     1 </span
@@ -954,7 +1090,7 @@
                   <span
                     data-purecounter-start="1"
                     data-purecounter-end="25000"
-                    data-purecounter-duration="2"
+                    data-purecounter-duration="5"
                     class="purecounter"
                   >
                     1 </span
@@ -1091,6 +1227,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.1.1/dist/purecounter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

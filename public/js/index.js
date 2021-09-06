@@ -1,9 +1,7 @@
 function navButtonClick() {
   let x = document.getElementById("mobilenavigation");
   // let i = document.querySelector("#togglebtn > i");
-  let i = document.getElementById("togglebtn");
   console.log(x);
-  console.log(i);
   if (x.style.top === "") {
     x.style.top = "80px";
   } else {
@@ -61,22 +59,6 @@ $("#doubt-steps-video").click(function () {
   else this.pause();
 });
 
-//testimonial
-
-// function start() {
-//   let card1 = document.getElementById("cardanimation");
-//   let card2 = document.getElementById("cardanimation2");
-//   let card3 = document.getElementById("cardanimation3");
-
-//   card1.style.animation = "cardcycle 1s 1s";
-//   card2.style.animation = "cardcycle 1s 2s";
-//   card3.style.animation = "cardcycle 1s 3s";
-// }
-
-// function testimonialcardAnimation() {
-//   setInterval(start);
-// }
-
 $("#mobile-doubtsection > div:gt(0)").hide();
 
 setInterval(function () {
@@ -87,3 +69,78 @@ setInterval(function () {
     .end()
     .appendTo("#mobile-doubtsection");
 }, 4000);
+
+function card1() {
+  let test1 = document.getElementById("testimonial1");
+  let test2 = document.getElementById("testimonial2");
+  let test3 = document.getElementById("testimonial3");
+
+  test1.style.transition = "transform 1s ease-out";
+  test1.style.transform = "translate(0px)";
+}
+
+function card2() {
+  let test1 = document.getElementById("testimonial1");
+  test1.style.transition = "transform 1s ease-out";
+  test1.style.transform = "translate(300px)";
+}
+
+function card3() {
+  let test1 = document.getElementById("testimonial1");
+  test1.style.transition = "transform 1s ease-out";
+  test1.style.transform = "translate(0px)";
+}
+
+function desktopcard1() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Anamika";
+  comment.innerHTML =
+    "Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them!";
+}
+
+function desktopcard2() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Radhika";
+  comment.innerHTML =
+    "I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them!";
+}
+
+function desktopcard3() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Sonam";
+  comment.innerHTML =
+    "I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortc";
+}
+
+function desktophovercard1() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Anamika";
+  comment.innerHTML =
+    "Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them!";
+}
+
+function desktophovercard2() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Radhika";
+  comment.innerHTML =
+    "I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortcomings and improve them!";
+}
+
+function desktophovercard3() {
+  let name = document.getElementById("testimonial-reviewname");
+  let comment = document.getElementById("testimonial-reviewcontent");
+
+  name.innerHTML = "Sonam";
+  comment.innerHTML =
+    "I was able to focus on my shortcomings and improve them! Mock tests on Toppr helped me develop my exam strategy. I was able to focus on my shortc";
+}
