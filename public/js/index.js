@@ -70,25 +70,28 @@ setInterval(function () {
     .appendTo("#mobile-doubtsection");
 }, 4000);
 
-function card1() {
-  let test1 = document.getElementById("testimonial1");
-  let test2 = document.getElementById("testimonial2");
-  let test3 = document.getElementById("testimonial3");
+// testimonial animation
 
-  test1.style.transition = "transform 1s ease-out";
-  test1.style.transform = "translate(0px)";
+let test1 = document.getElementById("testimonial1");
+let test2 = document.getElementById("testimonial2");
+let test3 = document.getElementById("testimonial3");
+
+function card1() {
+  test1.classList.remove("hidden");
+  test2.classList.add("hidden");
+  test3.classList.add("hidden");
 }
 
 function card2() {
-  let test1 = document.getElementById("testimonial1");
-  test1.style.transition = "transform 1s ease-out";
-  test1.style.transform = "translate(300px)";
+  test1.classList.add("hidden");
+  test2.classList.remove("hidden");
+  test3.classList.add("hidden");
 }
 
 function card3() {
-  let test1 = document.getElementById("testimonial1");
-  test1.style.transition = "transform 1s ease-out";
-  test1.style.transform = "translate(0px)";
+  test1.classList.add("hidden");
+  test2.classList.add("hidden");
+  test3.classList.remove("hidden");
 }
 
 function desktopcard1() {
