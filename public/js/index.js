@@ -1,3 +1,5 @@
+// navbarToggle
+
 function navButtonClick() {
   let x = document.getElementById("mobilenavigation");
   // let i = document.querySelector("#togglebtn > i");
@@ -22,6 +24,9 @@ function navButtonClick() {
 //     ele.style.background = "white";
 //   }
 // }
+
+//Desktopdoubtstepanimation
+
 window.onscroll = function () {
   DoubtStepsAnimation();
 };
@@ -54,6 +59,7 @@ setInterval(function () {
 
 // setInterval(DoubtStepsAnimation(), 5500)
 
+//mobiledoubtstepanimation
 $("#doubt-steps-video").click(function () {
   if (this.paused) this.play();
   else this.pause();
@@ -115,6 +121,8 @@ testimonialcardautoclick();
 setInterval(function () {
   testimonialcardautoclick();
 }, 12000);
+
+//desktoptestimonialanimation
 
 function desktopcard1() {
   let name = document.getElementById("testimonial-reviewname");

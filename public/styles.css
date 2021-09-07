@@ -131,9 +131,51 @@
     background-color: #2bbbe7;
   }
 
-  nav ul li a:hover,
-  nav ul li a.active {
-    background-color: red;
+  .mobile-navlink li a {
+    position: relative;
+    padding: 6px 0;
+  }
+
+  .mobile-navlink li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: black;
+    transition: all 0.4s ease;
+  }
+
+  .mobile-navlink li a:hover:before {
+    width: 100%;
+  }
+
+  .mobile-navlink li.first-navlink a:hover:before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mobile-navlink li.second-navlink a:hover:before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-navlink li.third-navlink a:hover:before {
+    /* bottom: 0px;
+    opacity: 1; */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-navlink li.fourth-navlink a:hover:before {
+    /* transform: scaleX(1);
+    transform-origin: left; */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .mobilenavbar,
   .mobilenavlinkcard,
@@ -306,15 +348,15 @@
 .mainbtn input[type="text"]:focus {
   outline: none;
 }
-/* 
+
 .playbtn {
-  width: 180px;
-  height: 55.26px;
-  background: #000000;
-  border-radius: 5px;
-  margin-left: 10px;
+  height: 30px;
+  width: 200px;
+  margin-left: 1rem;
+  margin-top: 3rem;
 }
 
+/*
 .playbtn img {
   margin-inline: auto;
   padding-top: 8px;
@@ -330,6 +372,10 @@
 
 .mainarrow:hover {
   background-color: grey;
+}
+
+.mainhead {
+  margin-bottom: 1.5rem;
 }
 
 /* mainsection mobileview */
@@ -355,6 +401,7 @@
     color: #000000;
     padding-top: 2rem;
     padding-left: 0px;
+    margin-bottom: 0;
   }
 
   .mainimg {
@@ -392,6 +439,7 @@
     width: 150px;
     height: 46.05px;
     margin-inline: auto;
+    margin-top: 0;
   }
 
   /* .playbtn img {
