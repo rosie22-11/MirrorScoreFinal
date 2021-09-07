@@ -94,6 +94,28 @@ function card3() {
   test3.classList.remove("hidden");
 }
 
+function testimonialcardautoclick() {
+  setTimeout(function () {
+    //card1();
+    document.querySelector("#testimonial-1").click();
+  }, 0);
+
+  setTimeout(function () {
+    document.querySelector("#testimonial-2").click();
+    //card2();
+  }, 4000);
+
+  setTimeout(function () {
+    document.querySelector("#testimonial-3").click();
+    //card3();
+  }, 8000);
+}
+testimonialcardautoclick();
+
+setInterval(function () {
+  testimonialcardautoclick();
+}, 12000);
+
 function desktopcard1() {
   let name = document.getElementById("testimonial-reviewname");
   let comment = document.getElementById("testimonial-reviewcontent");
