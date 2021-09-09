@@ -30,6 +30,10 @@ function navButtonClick() {
 window.onscroll = function () {
   DoubtStepsAnimation();
 };
+
+window.onscroll = function () {
+  MobileDoubtStepsAnimation();
+};
 function DoubtStepsAnimation() {
   let elmone = document.querySelector("#doubt-box-one");
   let elmtwo = document.querySelector("#doubt-box-two");
@@ -60,21 +64,46 @@ setInterval(function () {
 // setInterval(DoubtStepsAnimation(), 5500)
 
 //mobiledoubtstepanimation
+let d1 = document.getElementById("mobile-doubt-box-one");
+let d2 = document.getElementById("mobile-doubt-box-two");
+let d3 = document.getElementById("mobile-doubt-box-three");
+function MobileDoubtStepsAnimation() {
+  setTimeout(function () {
+    d1.style.display = "flex";
+    d1.style.animation = "fadeIn ease 8s";
+  }, 0);
+  setTimeout(function () {
+    d1.style.display = "none";
+    d2.style.display = "flex";
+    d2.style.animation = "fadeIn ease 8s";
+  }, 4000);
+  setTimeout(function () {
+    d2.style.display = "none";
+    d3.style.display = "flex";
+    d3.style.animation = "fadeIn ease 6s";
+  }, 8000);
+}
+
+setInterval(function () {
+  d3.style.display = "none";
+  MobileDoubtStepsAnimation();
+}, 12000);
+
 // $("#doubt-steps-video").click(function () {
 //   if (this.paused) this.play();
 //   else this.pause();
 // });
 
-$("#mobile-doubtsection > div:gt(0)").hide();
+// $("#mobile-doubtsection > div:gt(0)").hide();
 
-setInterval(function () {
-  $("#mobile-doubtsection > div:first")
-    .fadeOut(2000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo("#mobile-doubtsection");
-}, 4000);
+// setInterval(function () {
+//   $("#mobile-doubtsection > div:first")
+//     .fadeOut(3000)
+//     .next()
+//     .fadeIn(1000)
+//     .end()
+//     .appendTo("#mobile-doubtsection");
+// }, 4000);
 
 // testimonial animation
 
