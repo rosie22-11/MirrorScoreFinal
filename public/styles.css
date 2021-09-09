@@ -1,5 +1,12 @@
 /* navbar desktop view*/
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navb {
   position: fixed;
   top: 0;
@@ -2705,18 +2712,18 @@
 /* study material desktop view */
 
 .study-head {
-  width: 158.77px;
+  /* width: 158.77px; */
   height: 43.83px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 20px;
   color: #000000;
 }
 
 .study-head-desc {
-  width: 151.95px;
+  /* width: 151.95px; */
   height: 46.46px;
   font-family: Raleway;
   font-style: normal;
@@ -2724,6 +2731,7 @@
   font-size: 12px;
   line-height: 14px;
   color: #2d2d2d;
+  padding-top: 0.3rem;
 }
 
 .book-img,
@@ -2820,7 +2828,7 @@
     .study-head-desc {
       height: 45.78px;
       width: fit-content;
-      padding-top: 0.75rem;
+      /* padding-top: 0.75rem; */
     }
 
     .study_card {

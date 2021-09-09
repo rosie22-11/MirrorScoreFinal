@@ -34,7 +34,7 @@ function DoubtStepsAnimation() {
   let elmone = document.querySelector("#doubt-box-one");
   let elmtwo = document.querySelector("#doubt-box-two");
   let elmthree = document.querySelector("#doubt-box-three");
-  // console.log(elmone)
+  //console.log(elmone);
   setTimeout(function () {
     elmthree.classList.remove("doubt-box-blacked");
     elmtwo.classList.remove("doubt-box-blacked");
@@ -60,18 +60,18 @@ setInterval(function () {
 // setInterval(DoubtStepsAnimation(), 5500)
 
 //mobiledoubtstepanimation
-$("#doubt-steps-video").click(function () {
-  if (this.paused) this.play();
-  else this.pause();
-});
+// $("#doubt-steps-video").click(function () {
+//   if (this.paused) this.play();
+//   else this.pause();
+// });
 
 $("#mobile-doubtsection > div:gt(0)").hide();
 
 setInterval(function () {
   $("#mobile-doubtsection > div:first")
-    .fadeOut(1000)
+    .fadeOut(2000)
     .next()
-    .fadeIn(1000)
+    .fadeIn(2000)
     .end()
     .appendTo("#mobile-doubtsection");
 }, 4000);
